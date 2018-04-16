@@ -36,5 +36,121 @@
         </p>
       </div>
     </header>
+    <main class="form-main">
+      <p class="form-main__paragraph">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+      </p>
+      <form class="formes" action="https://echo.htmlacademy.ru" method="post">
+        <p class="formes__name">
+          <label for="second-name">Фамилия:</label>
+          <input type="text" id="second-name" name="name-second" placeholder="Укажите фамилию*">
+        </p>
+        <p class="formes__name">
+          <label for="first-name">Имя:</label>
+          <input type="text" id="first-name" name="name-first" placeholder="Введите ваше имя*">
+        </p>
+        <p class="formes__name">
+          <label for="third-name">Отчество:</label>
+          <input type="text" id="third-name" name="name-third" placeholder="Ну и отчество тоже">
+        </p>
+        <div class="formes__achievement-wrapper">
+          <p class="formes__achievement-paragraph">
+            Ваши безбашенные достижения в путешествии
+          </p>
+          <ul class="formes__achievements-list achievement-list">
+            <li class="achievement-list__item">
+              <label for="shark">
+                <input type="checkbox" name="selfie-shark" id="shark" checked>
+                <span class="checkbox-indicator"></span>
+                Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="achievement-list__item">
+              <label for="burned">
+                <input type="checkbox" name="self-burned" id="burned" checked>
+                <span class="checkbox-indicator"></span>
+                Обгорел на пляже
+              </label>
+            </li>
+            <li class="achievement-list__item">
+              <label for="chuck">
+                <input type="checkbox" name="see-chuck" id="chuck">
+                <span class="checkbox-indicator"></span>
+                Видел Чака Норриса
+              </label>
+            </li>
+            <li class="achievement-list__item">
+              <label for="souvenir">
+                <input type="checkbox" name="buy-souvenir" id="souvenir">
+                <span class="checkbox-indicator"></span>
+                Накупил сувениров
+              </label>
+            </li>
+            <li class="achievement-list__item">
+              <label for="fort">
+                <input type="checkbox" name="save-fort" id="fort" checked>
+                <span class="checkbox-indicator"></span>
+                Удержал башню
+              </label>
+            </li>
+            <li class="achievement-list__item">
+              <label for="crash">
+                <input type="checkbox" name="hotel-crashed" id="crash">
+                <span class="checkbox-indicator"></span>
+                Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </div>
+        <p class="formes__number">
+          <label for="number">Номер телефона:</label>
+          <input type="text" id="number" name="phone-number" placeholder="Номер, пожалуйста">
+        </p>
+        <p class="formes__mail">
+          <label for="mail">Адрес почты:</label>
+          <input type="text" id="mail" name="e-mail" placeholder="Введите почту*">
+        </p>
+        <div class="formes__applications-wrapper">
+          <p class="formes__applications-paragraph">С каким приложением путешествовали?</p>
+          <ul class="formes__applications-list application-list">
+            <li class="application-list__item">
+              <label for="ios">
+                <input type="radio" name="ios-system" id="ios">Pink для iOS
+              </label>
+            </li>
+            <li class="application-list__item">
+              <label for="android">
+                <input type="radio" name="android-system" id="android">Pink на Android
+              </label>
+            </li>
+            <li class="application-list__item">
+              <label for="windows-phone">
+                <input type="radio" name="windows-phone-system" id="windows-phone">Windows Phone
+              </label>
+            </li>
+          </ul>
+        </div>
+        <p class="formes__emotions-paragraph">Опишите свои эмоции</p>
+        <textarea name="emotions" id="emotions-fiels" rows="10">Можно прям в красках, не стесняясь в выражениях
+        </textarea>
+        <button class="formes__submit button" type="submit">Отправить форму</button>
+        <p class="formes__required-paragraph">* — обязательные поля</p>
+      </form>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__logo">
+          <span class="page-footer__logo-image">Logo</span>
+          <span class="page-footer__logo-name"><a href="#">Pink</a></span>
+        </div>
+        <ul class="page-footer__socials-list social-list">
+          <li class="social-list__item"><a href="#">twitter</a></li>
+          <li class="social-list__item"><a href="#">facebook</a></li>
+          <li class="social-list__item"><a href="#">youtube</a></li>
+        </ul>
+        <div class="page-footer__developer">
+          <span class="page-footer__developed">Разработано</span>
+          <span class="page-footer__developer-logo"><a href="#">htmlacademy logo</a></span>
+        </div>
+      </footer>
   </body>
 </html>
