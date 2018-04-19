@@ -136,18 +136,27 @@
         <p class="photos__paragraph">Затмите их всех!</p>
         <p class="photos__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
       </section>
-      <section class="editor">
-        <h2 class="visually-hidden">Редактор</h2>
-        <img src="http://placehold.it/150x100" alt="Фото">
-        <ul class="editor__tools-list tool-list">
-          <li class="tool-item">icon</li>
-          <li class="tool-item">icon</li>
-          <li class="tool-item">icon</li>
-          <li class="tool-item">range</li>
-        </ul>
-        <button class="editor__button button" type="submit">Запостить</button>
-        <button class="editor__button button" type="reset">Отмена</button>
-      </section>
+      <form class="editor" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="editor__field">
+          <legend class="visually-hidden">Редактор</legend>
+          <img src="http://placehold.it/150x100" alt="Фото">
+          <ul class="editor__tools-list tool-list">
+            <li class="tool-list__group">
+              <input class="tool-item" type="checkbox" name="size-edit" id="edit-size" checked>
+              <label for="edit-size">icon</label>
+              <input class="tool-item" type="checkbox" name="color-edit" id="edit-color">
+              <label for="edit-color">icon</label>
+              <input class="tool-item" type="checkbox" name="brightness-edit" id="edit-brightness">
+              <label for="edit-brightness">icon</label>
+            </li>
+            <li class="tool-list__group">
+              <input class="tool-item-range" type="range" min="1" max="10">
+            </li>
+          </ul>
+          <button class="editor__button button" type="submit">Запостить</button>
+          <button class="editor__button button" type="reset">Отмена</button>
+        </fieldset>
+      </form>
       <footer class="page-footer">
         <div class="page-footer__logo">
           <span class="page-footer__logo-image">Logo</span>
