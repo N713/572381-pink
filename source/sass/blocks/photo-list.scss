@@ -1,0 +1,46 @@
+.photo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-list__item {
+  background-color: #f2f2f2;
+  margin-bottom: 2px;
+}
+
+.photo-list__item-paragraph--day {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #d22856;
+}
+
+.photo-list__item-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.photo-list__item-time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo-list__item-comment {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.photo-list__item-like-number,
+.photo-list__like-count {
+  color: #d22856;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}

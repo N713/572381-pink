@@ -49,7 +49,7 @@
       </p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__username">
-          <legend>Пожалуйста, заполните</legend>
+          <legend class="visually-hidden">Пожалуйста, заполните</legend>
           <p class="form__name">
             <label for="second-name">Фамилия:</label>
             <input class="surname" type="text" id="second-name" name="name-second" placeholder="Укажите фамилию*">
@@ -64,41 +64,41 @@
           </p>
         </fieldset>
         <fieldset class="form__user-achievements">
-          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form__user-achievement-legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__achievements-list achievement-list">
             <li class="achievement-list__item">
               <input type="checkbox" name="selfie-shark" id="shark" checked>
-              <label for="shark">Сделал селфи с акулой</label>
+              <label class="achievement-list__name" for="shark">Сделал селфи с акулой</label>
             </li>
             <li class="achievement-list__item">
               <input type="checkbox" name="self-burned" id="burned" checked>
-              <label for="burned">Обгорел на пляже</label>
+              <label class="achievement-list__name" for="burned">Обгорел на пляже</label>
             </li>
             <li class="achievement-list__item">
               <input type="checkbox" name="see-chuck" id="chuck">
-              <label for="chuck">Видел Чака Норриса</label>
+              <label class="achievement-list__name" for="chuck">Видел Чака Норриса</label>
             </li>
             <li class="achievement-list__item">
               <input type="checkbox" name="buy-souvenir" id="souvenir">
-              <label for="souvenir">Накупил сувениров</label>
+              <label class="achievement-list__name" for="souvenir">Накупил сувениров</label>
             </li>
             <li class="achievement-list__item">
               <input type="checkbox" name="save-fort" id="fort" checked>
-              <label for="fort">Удержал башню</label>
+              <label class="achievement-list__name" for="fort">Удержал башню</label>
             </li>
             <li class="achievement-list__item">
               <input type="checkbox" name="hotel-crashed" id="crash">
-              <label for="crash">Разгромил отель</label>
+              <label class="achievement-list__name" for="crash">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__user-contacts">
           <p class="form__number">
-            <label for="number">Номер телефона:</label>
+            <label class="form__user-contacts-name" for="number">Номер телефона:</label>
             <input type="text" id="number" name="phone-number" placeholder="Номер, пожалуйста">
           </p>
           <p class="form__mail">
-            <label for="mail">Адрес почты:</label>
+            <label class="form__user-contacts-name" for="mail">Адрес почты:</label>
             <input type="text" id="mail" name="e-mail" placeholder="Введите почту*">
           </p>
         </fieldset>
@@ -106,17 +106,17 @@
           <legend>С каким приложением путешествовали?</legend>
           <ul class="form__applications-list application-list">
             <li class="application-list__item">
-              <label for="ios">
+              <label class="application-list__label-name" for="ios">
               <input type="radio" name="ios-system" id="ios">Pink для iOS
               </label>
             </li>
             <li class="application-list__item">
-              <label for="android">
+              <label class="application-list__label-name" for="android">
               <input type="radio" name="android-system" id="android">Pink на Android
               </label>
             </li>
             <li class="application-list__item">
-              <label for="windows-phone">
+              <label class="application-list__label-name" for="windows-phone">
               <input type="radio" name="windows-phone-system" id="windows-phone">Windows Phone
               </label>
             </li>
@@ -128,7 +128,7 @@
           </textarea>
         </fieldset>
         <button class="form__submit button" type="submit">Отправить форму</button>
-        <p class="form__required-paragraph">* — обязательные поля</p>
+        <p class="form__required-paragraph"><sup class="form__sup">*</sup> — обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
