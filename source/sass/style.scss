@@ -1,0 +1,20 @@
+@import "\blocks\navigation.scss";
+@import "\blocks\page-header.scss";
+@import "\blocks\download-application.scss";
+@import "\blocks\index-main.scss";
+@import "\blocks\visually-hidden.scss";
+@import "\blocks\advantages.scss";
+@import "\blocks\advantage-list.scss";
+@import "\blocks\reviews.scss";
+@import "\blocks\review-list.scss";
+@import "\blocks\using-plan.scss";
+@import "\blocks\plan-table.scss";
+@import "\blocks\contacts.scss";
+@import "\blocks\contact-list.scss";
+@import "\blocks\map.scss";
+@import "\blocks\photo-main.scss";
+
+body {
+  background-color: teal;
+  font-family: "Open Sans", "Arial", sans-serif;
+}

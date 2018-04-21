@@ -3,15 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <ul class="page-header__list">
         <li class="page-heager__list-item">
           <a class="page-header__logo-link" href="#">
-          <span class="page-header__logo">Pink</span>
+            <span class="page-header__logo">
+              <img src="img/logo-pink-white-mobile.svg">
+            </span>
           </a>
-          <button class="page-header__burger-button">Burger</button>
+          <button class="page-header__burger-button">
+            <img src="img/icon-menu-burger.svg">
+          </button>
         </li>
       </ul>
       <nav class="navigation">
@@ -21,44 +26,44 @@
             <button class="page-header__close-button">Х</button>
           </li>
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="navigation__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="navigation__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a class="navigation__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">html academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru">html academy</a>
           </li>
         </ul>
       </nav>
       <div class="page-header__index-phone-image">
         <img src="http://placehold.it/150x100" alt="Мобильный">
       </div>
-      <div class="page-header__download-division">
-        <button class="page-header__download-button">
-        Скачать приложение
+      <div class="download-application">
+        <button class="download-application__download-button">
+          Скачать приложение
         </button>
-        <ul class="page-header__os-list download-list">
+        <ul class="download-application__os-list download-list">
           <li class="download-list__item">
             <a href="#">
-            <img src="http://placehold.it/150x100" alt="ios">iOS
+              <img src="http://placehold.it/150x100" alt="ios">iOS
             </a>
           </li>
           <li class="download-list__item">
             <a href="#">
-            <img src="http://placehold.it/150x100" alt="Android">Android
+              <img src="http://placehold.it/150x100" alt="Android">Android
             </a>
           </li>
           <li class="download-list__item">
             <a href="#">
-            <img src="http://placehold.it/150x100" alt="Windows Phone">Windows
+              <img src="http://placehold.it/150x100" alt="Windows Phone">Windows
             </a>
           </li>
         </ul>
-        <p class="page-header__download-paragraph">
+        <p class="download-application__download-paragraph">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </div>
@@ -125,36 +130,37 @@
       <section class="using-plan">
         <h2 class="visually-hidden">Тарифы</h2>
         <div class="using-plan__wrapper slider">
-          <ul class="using-plan__list plan-list slider-list">
-            <li class="plan-list__item--title slider__item">
-              <b class="plan-list__item-name">Стандарт</b>
-              <p class="plan-list__item-cost">3,99 usd</p>
-            </li>
-            <li class="plan-list__item slider__item">
-              <p class="plan-list__item-option">
+          <table class="using-plan__table plan-table slider-table">
+            <tr class="plan-table__item--title slider__item">
+              <span class="plan-table__item-hit">Хит</span>
+              <td class="plan-table__item-name">Стандарт</td>
+              <td class="plan-table__item-cost">3,99 usd</td>
+            </tr>
+            <tr class="plan-table__item slider__item">
+              <td class="plan-table__item-option">
                 Розовый фильтр
-              </p>
-              <p class="plan-list__item-ability--yes">
+              </td>
+              <td class="plan-table__item-ability--yes">
                 <img src="http://placehold.it/150x100" alt="Доступно">
-              </p>
-            </li>
-            <li class="plan-list__item slider__item">
-              <p class="plan-list__item-option">
+              </td>
+            </tr>
+            <tr class="plan-table__item slider__item">
+              <td class="plan-table__item-option">
                 Смайлики
-              </p>
-              <p class="plan-list__item-ability--yes">
+              </td>
+              <td class="plan-table__item-ability--yes">
                 <img src="http://placehold.it/150x100" alt="Доступно">
-              </p>
-            </li>
-            <li class="plan-list__item slider__item">
-              <p class="plan-list__item-option">
+              </td>
+            </tr>
+            <tr class="plan-table__item slider__item">
+              <td class="plan-table__item-option">
                 Комментарии
-              </p>
-              <p class="plan-list__item-ability--none">
+              </td>
+              <td class="plan-table__item-ability--none">
                 <img src="http://placehold.it/150x100" alt="Недоступно">
-              </p>
-            </li>
-          </ul>
+              </td>
+            </tr>
+          </table>
           <p class="using-plan__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
@@ -169,7 +175,7 @@
         <ul class="contacts__list contact-list">
           <li class="contact-list__item">
             <h3 class="contact-list__item-name">
-              Звоните
+              Звоните:
             </h3>
             <p class="contact-list__item-info">
               +7 (812) 555-66-66
@@ -177,7 +183,7 @@
           </li>
           <li class="contact-list__item">
             <h3 class="contact-list__item-name">
-              Пишите
+              Пишите:
             </h3>
             <p class="contact-list__item-info">
               mail@htmlacademy.ru
@@ -185,7 +191,7 @@
           </li>
           <li class="contact-list__item">
             <h3 class="contact-list__item-name">
-              Приезжайте в гости
+              Приезжайте в гости:
             </h3>
             <p class="contact-list__item-info">
               ул. Большая Конюшенная, 19/8
@@ -193,7 +199,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <img src="http://placehold.it/150x100" alt ="Карта">
       </section>

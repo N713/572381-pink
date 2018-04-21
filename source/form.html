@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link" href="#">
-      <span class="page-header__logo">Pink</span>
-      </a>
-      <button class="page-header__burger-button">Burger</button>
+      <ul class="page-header__list">
+        <li class="page-heager__list-item">
+          <a class="page-header__logo-link" href="#">
+            <span class="page-header__logo">
+              <img src="img/logo-pink-white-mobile.svg">
+            </span>
+          </a>
+          <button class="page-header__burger-button">
+            <img src="img/icon-menu-burger.svg">
+          </button>
+        </li>
+      </ul>
       <nav class="navigation">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
@@ -17,100 +26,85 @@
             <button class="page-header__close-button">Х</button>
           </li>
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="navigation__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a class="navigation__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">html academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru">html academy</a>
           </li>
         </ul>
       </nav>
-      <div class="page-header__form-describe">
-        <p class="page-header__form-paragraph">
-          Конкурс на самое безбашенное путешествие с Пинк
-        </p>
+      <div class="page-header__describe">
+        <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
     </header>
     <main class="form-main">
       <p class="form-main__paragraph">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
       </p>
-      <form class="formes" action="https://echo.htmlacademy.ru" method="post">
-        <p class="formes__name">
-          <label for="second-name">Фамилия:</label>
-          <input type="text" id="second-name" name="name-second" placeholder="Укажите фамилию*">
-        </p>
-        <p class="formes__name">
-          <label for="first-name">Имя:</label>
-          <input type="text" id="first-name" name="name-first" placeholder="Введите ваше имя*">
-        </p>
-        <p class="formes__name">
-          <label for="third-name">Отчество:</label>
-          <input type="text" id="third-name" name="name-third" placeholder="Ну и отчество тоже">
-        </p>
-        <div class="formes__achievement-wrapper">
-          <p class="formes__achievement-paragraph">Ваши безбашенные достижения в путешествии</p>
-          <ul class="formes__achievements-list achievement-list">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__username">
+          <legend>Пожалуйста, заполните</legend>
+          <p class="form__name">
+            <label for="second-name">Фамилия:</label>
+            <input class="surname" type="text" id="second-name" name="name-second" placeholder="Укажите фамилию*">
+          </p>
+          <p class="form__name">
+            <label for="first-name">Имя:</label>
+            <input class="name" type="text" id="first-name" name="name-first" placeholder="Введите ваше имя*">
+          </p>
+          <p class="form__name">
+            <label for="third-name">Отчество:</label>
+            <input class="last-name" type="text" id="third-name" name="name-third" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <fieldset class="form__user-achievements">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <ul class="form__achievements-list achievement-list">
             <li class="achievement-list__item">
-              <label for="shark">
               <input type="checkbox" name="selfie-shark" id="shark" checked>
-              <span class="checkbox-indicator"></span>
-              Сделал селфи с акулой
-              </label>
+              <label for="shark">Сделал селфи с акулой</label>
             </li>
             <li class="achievement-list__item">
-              <label for="burned">
               <input type="checkbox" name="self-burned" id="burned" checked>
-              <span class="checkbox-indicator"></span>
-              Обгорел на пляже
-              </label>
+              <label for="burned">Обгорел на пляже</label>
             </li>
             <li class="achievement-list__item">
-              <label for="chuck">
               <input type="checkbox" name="see-chuck" id="chuck">
-              <span class="checkbox-indicator"></span>
-              Видел Чака Норриса
-              </label>
+              <label for="chuck">Видел Чака Норриса</label>
             </li>
             <li class="achievement-list__item">
-              <label for="souvenir">
               <input type="checkbox" name="buy-souvenir" id="souvenir">
-              <span class="checkbox-indicator"></span>
-              Накупил сувениров
-              </label>
+              <label for="souvenir">Накупил сувениров</label>
             </li>
             <li class="achievement-list__item">
-              <label for="fort">
               <input type="checkbox" name="save-fort" id="fort" checked>
-              <span class="checkbox-indicator"></span>
-              Удержал башню
-              </label>
+              <label for="fort">Удержал башню</label>
             </li>
             <li class="achievement-list__item">
-              <label for="crash">
               <input type="checkbox" name="hotel-crashed" id="crash">
-              <span class="checkbox-indicator"></span>
-              Разгромил отель
-              </label>
+              <label for="crash">Разгромил отель</label>
             </li>
           </ul>
-        </div>
-        <p class="formes__number">
-          <label for="number">Номер телефона:</label>
-          <input type="text" id="number" name="phone-number" placeholder="Номер, пожалуйста">
-        </p>
-        <p class="formes__mail">
-          <label for="mail">Адрес почты:</label>
-          <input type="text" id="mail" name="e-mail" placeholder="Введите почту*">
-        </p>
-        <div class="formes__applications-wrapper">
-          <p class="formes__applications-paragraph">С каким приложением путешествовали?</p>
-          <ul class="formes__applications-list application-list">
+        </fieldset>
+        <fieldset class="form__user-contacts">
+          <p class="form__number">
+            <label for="number">Номер телефона:</label>
+            <input type="text" id="number" name="phone-number" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="form__mail">
+            <label for="mail">Адрес почты:</label>
+            <input type="text" id="mail" name="e-mail" placeholder="Введите почту*">
+          </p>
+        </fieldset>
+        <fieldset class="form__user-app">
+          <legend>С каким приложением путешествовали?</legend>
+          <ul class="form__applications-list application-list">
             <li class="application-list__item">
               <label for="ios">
               <input type="radio" name="ios-system" id="ios">Pink для iOS
@@ -127,27 +121,29 @@
               </label>
             </li>
           </ul>
-        </div>
-        <p class="formes__emotions-paragraph">Опишите свои эмоции</p>
-        <textarea name="emotions" id="emotions-fiels" rows="10">Можно прям в красках, не стесняясь в выражениях
-        </textarea>
-        <button class="formes__submit button" type="submit">Отправить форму</button>
-        <p class="formes__required-paragraph">* — обязательные поля</p>
+        </fieldset>
+        <fieldset class="form__user-emotions">
+          <legend>Опишите свои эмоции</legend>
+          <textarea name="emotions" id="emotions-fiels" rows="10">Можно прям в красках, не стесняясь в выражениях
+          </textarea>
+        </fieldset>
+        <button class="form__submit button" type="submit">Отправить форму</button>
+        <p class="form__required-paragraph">* — обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <span class="page-footer__logo-image">Logo</span>
-        <span class="page-footer__logo-name"><a href="#">Pink</a></span>
+        <img src="http://placehold.it/150x100" alt="Логотип">
+        <a class="page-footer__logo-name" href="#">Pink</a>
       </div>
       <ul class="page-footer__socials-list social-list">
-        <li class="social-list__item"><a href="#">twitter</a></li>
-        <li class="social-list__item"><a href="#">facebook</a></li>
-        <li class="social-list__item"><a href="#">youtube</a></li>
+        <li class="social-list__item"><a class="social-twitter" href="#">twitter</a></li>
+        <li class="social-list__item"><a class="social-facebook" href="#">facebook</a></li>
+        <li class="social-list__item"><a class="social-youtube" href="#">youtube</a></li>
       </ul>
       <div class="page-footer__developer">
         <span class="page-footer__developed">Разработано</span>
-        <span class="page-footer__developer-logo"><a href="#">htmlacademy logo</a></span>
+        <a class="page-footer__developer-logo" href="#">htmlacademy logo</a>
       </div>
     </footer>
   </body>

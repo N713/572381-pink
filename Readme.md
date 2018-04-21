@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Наумов](https://up.htmlacademy.ru/adaptive/14/user/572381).
-* Наставник: `Неизвестно`.
+* Студент: [Денис Быков](https://htmlacademy.ru/profile/id66426).
 
 ---
 
