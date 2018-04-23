@@ -39,32 +39,32 @@
         <img src="http://placehold.it/150x100" alt="Мобильный">
       </div>
     </header>
-    <div class="download-application">
-      <button class="download-application__download-button">
-        Скачать приложение
-      </button>
-      <ul class="download-application__os-list download-list">
-        <li class="download-list__item">
-          <a class="download-list__link" href="#">
-            <img src="http://placehold.it/150x100" alt="ios">iOS
-          </a>
-        </li>
-        <li class="download-list__item">
-          <a class="download-list__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Android">Android
-          </a>
-        </li>
-        <li class="download-list__item">
-          <a class="download-list__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Windows Phone">Windows
-          </a>
-        </li>
-      </ul>
-      <p class="download-application__download-paragraph">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
-    </div>
     <main class="index-main">
+      <section class="download-application">
+        <button class="download-application__download-button">
+          Скачать приложение
+        </button>
+        <ul class="download-application__os-list download-list">
+          <li class="download-list__item">
+            <a class="download-list__link" href="#">
+              <img src="http://placehold.it/150x100" alt="ios">iOS
+            </a>
+          </li>
+          <li class="download-list__item">
+            <a class="download-list__link" href="#">
+              <img src="http://placehold.it/150x100" alt="Android">Android
+            </a>
+          </li>
+          <li class="download-list__item">
+            <a class="download-list__link" href="#">
+              <img src="http://placehold.it/150x100" alt="Windows Phone">Windows
+            </a>
+          </li>
+        </ul>
+        <p class="download-application__download-paragraph">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="advantages__advantages-paragraph">
@@ -129,9 +129,17 @@
           <table class="using-plan__table plan-table slider-table">
             <tr class="plan-table__item--title slider-table__item">
               <th class="plan-table__item-best-plan">
-                <th class="plan-table__item-hit">Хит</th>
-                <th class="plan-table__item-name">Стандарт</th>
-                <th class="plan-table__item-cost">3,99 usd</th>
+                <span class="plan-table__item-name">База</span>
+                <span class="plan-table__item-cost">1,99 usd</span>
+              </th>
+              <th class="plan-table__item-best-plan">
+                <p class="plan-table__item-hit">Хит</p>
+                <span class="plan-table__item-name">Стандарт</span>
+                <span class="plan-table__item-cost">3,99 usd</span>
+              </th>
+              <th class="plan-table__item-best-plan">
+                <span class="plan-table__item-name">Анлим</span>
+                <span class="plan-table__item-cost">9,99 usd</span>
               </th>
             </tr>
             <tr class="plan-table__item slider-table__item">
@@ -139,8 +147,24 @@
                 Розовый фильтр
                 <img src="http://placehold.it/150x100" alt="Доступно">
               </td>
+              <td class="plan-table__item-option">
+                Розовый фильтр
+                <img src="http://placehold.it/150x100" alt="Доступно">
+              </td>
+              <td class="plan-table__item-option">
+                Розовый фильтр
+                <img src="http://placehold.it/150x100" alt="Доступно">
+              </td>
             </tr>
             <tr class="plan-table__item slider-table__item">
+              <td class="plan-table__item-option">
+                Смайлики
+                <img src="http://placehold.it/150x100" alt="Недоступно">
+              </td>
+              <td class="plan-table__item-option">
+                Смайлики
+                <img src="http://placehold.it/150x100" alt="Доступно">
+              </td>
               <td class="plan-table__item-option">
                 Смайлики
                 <img src="http://placehold.it/150x100" alt="Доступно">
@@ -150,6 +174,14 @@
               <td class="plan-table__item-option">
                 Комментарии
                 <img src="http://placehold.it/150x100" alt="Недоступно">
+              </td>
+              <td class="plan-table__item-option">
+                Комментарии
+                <img src="http://placehold.it/150x100" alt="Недоступно">
+              </td>
+              <td class="plan-table__item-option">
+                Комментарии
+                <img src="http://placehold.it/150x100" alt="Доступно">
               </td>
             </tr>
           </table>
@@ -193,7 +225,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="http://placehold.it/150x100" alt ="Карта">
+        <img src="http://placehold.it/150x100" alt="Карта">
       </section>
     </main>
   </body>
