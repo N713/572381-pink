@@ -22,10 +22,6 @@
       <nav class="navigation">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
-            <span class="page-header__logo"><a>Pink</a></span>
-            <button class="page-header__close-button">Х</button>
-          </li>
-          <li class="site-list__item">
             <a class="navigation__link">Главная</a>
           </li>
           <li class="site-list__item">
@@ -42,23 +38,25 @@
       <div class="page-header__index-phone-image">
         <img src="http://placehold.it/150x100" alt="Мобильный">
       </div>
-      <div class="download-application">
+    </header>
+    <main class="index-main">
+      <section class="download-application">
         <button class="download-application__download-button">
           Скачать приложение
         </button>
         <ul class="download-application__os-list download-list">
           <li class="download-list__item">
-            <a href="#">
+            <a class="download-list__link" href="#">
               <img src="http://placehold.it/150x100" alt="ios">iOS
             </a>
           </li>
           <li class="download-list__item">
-            <a href="#">
+            <a class="download-list__link" href="#">
               <img src="http://placehold.it/150x100" alt="Android">Android
             </a>
           </li>
           <li class="download-list__item">
-            <a href="#">
+            <a class="download-list__link" href="#">
               <img src="http://placehold.it/150x100" alt="Windows Phone">Windows
             </a>
           </li>
@@ -66,9 +64,7 @@
         <p class="download-application__download-paragraph">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
-      </div>
-    </header>
-    <main class="index-main">
+      </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="advantages__advantages-paragraph">
@@ -79,26 +75,26 @@
         </p>
         <ul class="advantages__advantages-list advantage-list">
           <li class="advantage-list__item">
-            <h3 class="advantage-list__item-head">
+            <h3 class="advantage-list__title">
               Поднимает настроение
             </h3>
-            <p class="advantage-list__item-paragraph">
+            <p class="advantage-list__description">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
           <li class="advantage-list__item">
-            <h3 class="advantage-list__item-head">
+            <h3 class="advantage-list__title">
               Меняет мир вокруг
             </h3>
-            <p class="advantage-list__item-paragraph">
+            <p class="advantage-list__description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
           <li class="advantage-list__item">
-            <h3 class="advantage-list__item-head">
+            <h3 class="advantage-list__title">
               Заводит новых друзей
             </h3>
-            <p class="advantage-list__item-paragraph">
+            <p class="advantage-list__description">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
@@ -110,8 +106,8 @@
       <section class="reviews">
         <div class="reviews__reviews-wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
-          <ul class="reviews__reviews-list review-list slider-list">
-            <li class="review-list__item slider-item">
+          <ul class="reviews__reviews-list review-list slide">
+            <li class="review-list__item slide__item">
               <h3 class="review-list__name">
                 Николай Петров
               </h3>
@@ -131,33 +127,61 @@
         <h2 class="visually-hidden">Тарифы</h2>
         <div class="using-plan__wrapper slider">
           <table class="using-plan__table plan-table slider-table">
-            <tr class="plan-table__item--title slider__item">
-              <span class="plan-table__item-hit">Хит</span>
-              <td class="plan-table__item-name">Стандарт</td>
-              <td class="plan-table__item-cost">3,99 usd</td>
+            <tr class="plan-table__item--title slider-table__item">
+              <th class="plan-table__item-best-plan">
+                <span class="plan-table__item-name">База</span>
+                <span class="plan-table__item-cost">1,99 usd</span>
+              </th>
+              <th class="plan-table__item-best-plan">
+                <p class="plan-table__item-hit">Хит</p>
+                <span class="plan-table__item-name">Стандарт</span>
+                <span class="plan-table__item-cost">3,99 usd</span>
+              </th>
+              <th class="plan-table__item-best-plan">
+                <span class="plan-table__item-name">Анлим</span>
+                <span class="plan-table__item-cost">9,99 usd</span>
+              </th>
             </tr>
-            <tr class="plan-table__item slider__item">
+            <tr class="plan-table__item slider-table__item">
               <td class="plan-table__item-option">
                 Розовый фильтр
+                <img class="plan-table__image" src="http://placehold.it/150x100" alt="Доступно">
               </td>
-              <td class="plan-table__item-ability--yes">
-                <img src="http://placehold.it/150x100" alt="Доступно">
+              <td class="plan-table__item-option">
+                Розовый фильтр
+                <img class="plan-table__image" src="http://placehold.it/150x100" alt="Доступно">
+              </td>
+              <td class="plan-table__item-option">
+                Розовый фильтр
+                <img class="plan-table__image" src="http://placehold.it/150x100" alt="Доступно">
               </td>
             </tr>
-            <tr class="plan-table__item slider__item">
+            <tr class="plan-table__item slider-table__item">
               <td class="plan-table__item-option">
                 Смайлики
+                <img class="plan-table__image--none" src="http://placehold.it/150x100" alt="Недоступно">
               </td>
-              <td class="plan-table__item-ability--yes">
-                <img src="http://placehold.it/150x100" alt="Доступно">
+              <td class="plan-table__item-option">
+                Смайлики
+                <img class="plan-table__image" src="http://placehold.it/150x100" alt="Доступно">
+              </td>
+              <td class="plan-table__item-option">
+                Смайлики
+                <img class="plan-table__image" src="http://placehold.it/150x100" alt="Доступно">
               </td>
             </tr>
-            <tr class="plan-table__item slider__item">
+            <tr class="plan-table__item slider-table__item">
               <td class="plan-table__item-option">
                 Комментарии
+                <img class="plan-table__image--none" src="http://placehold.it/150x100" alt="Недоступно">
               </td>
-              <td class="plan-table__item-ability--none">
-                <img src="http://placehold.it/150x100" alt="Недоступно">
+              <td class="plan-table__item-option">
+                Комментарии
+                <img class="plan-table__image-none" src="http://placehold.it/150x100" alt="Недоступно">
+              </td>
+              <td class="plan-table__item-option">
+                Комментарии
+                <img class="plan-table__image" src="http://placehold.it/150x100" alt="Доступно">
               </td>
             </tr>
           </table>
@@ -174,25 +198,25 @@
         <p class="contacts__paragraph">Свяжитесь с нами!</p>
         <ul class="contacts__list contact-list">
           <li class="contact-list__item">
-            <h3 class="contact-list__item-name">
+            <b class="contact-list__item-name">
               Звоните:
-            </h3>
+            </b>
             <p class="contact-list__item-info">
               +7 (812) 555-66-66
             </p>
           </li>
           <li class="contact-list__item">
-            <h3 class="contact-list__item-name">
+            <b class="contact-list__item-name">
               Пишите:
-            </h3>
+            </b>
             <p class="contact-list__item-info">
               mail@htmlacademy.ru
             </p>
           </li>
           <li class="contact-list__item">
-            <h3 class="contact-list__item-name">
+            <b class="contact-list__item-name">
               Приезжайте в гости:
-            </h3>
+            </b>
             <p class="contact-list__item-info">
               ул. Большая Конюшенная, 19/8
             </p>
@@ -201,7 +225,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="http://placehold.it/150x100" alt ="Карта">
+        <img src="http://placehold.it/150x100" alt="Карта">
       </section>
     </main>
   </body>
