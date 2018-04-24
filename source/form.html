@@ -10,9 +10,7 @@
       <ul class="page-header__list">
         <li class="page-heager__list-item">
           <a class="page-header__logo-link" href="#">
-            <span class="page-header__logo">
-              <img src="img/logo-pink-white-mobile.svg">
-            </span>
+            <img src="img/logo-pink-white-mobile.svg">
           </a>
           <button class="page-header__burger-button">
             <img src="img/icon-menu-burger.svg">
@@ -21,10 +19,6 @@
       </ul>
       <nav class="navigation">
         <ul class="navigation__list site-list">
-          <li class="site-list__item">
-            <span class="page-header__logo"><a>Pink</a></span>
-            <button class="page-header__close-button">Х</button>
-          </li>
           <li class="site-list__item">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
@@ -51,80 +45,77 @@
         <fieldset class="form__username">
           <legend class="visually-hidden">Пожалуйста, заполните</legend>
           <p class="form__name">
-            <label for="second-name">Фамилия:</label>
-            <input class="surname" type="text" id="second-name" name="name-second" placeholder="Укажите фамилию*">
+            <label class="form__label--red" for="second-name">Фамилия:</label>
+            <input class="form__input" type="text" id="second-name" name="name-second" placeholder="Укажите фамилию*">
           </p>
           <p class="form__name">
-            <label for="first-name">Имя:</label>
-            <input class="name" type="text" id="first-name" name="name-first" placeholder="Введите ваше имя*">
+            <label class="form__label--red" for="first-name">Имя:</label>
+            <input class="form__input" type="text" id="first-name" name="name-first" placeholder="Введите ваше имя*">
           </p>
           <p class="form__name">
-            <label for="third-name">Отчество:</label>
-            <input class="last-name" type="text" id="third-name" name="name-third" placeholder="Ну и отчество тоже">
+            <label class="form__label--red" for="third-name">Отчество:</label>
+            <input class="form__input" type="text" id="third-name" name="name-third" placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
         <fieldset class="form__user-achievements">
-          <legend class="form__user-achievement-legend">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__achievements-list achievement-list">
             <li class="achievement-list__item">
-              <input type="checkbox" name="selfie-shark" id="shark" checked>
-              <label class="achievement-list__name" for="shark">Сделал селфи с акулой</label>
+              <input class="form__input-check" type="checkbox" name="selfie-shark" id="shark" checked>
+              <label class="form__label" for="shark">Сделал селфи с акулой</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="self-burned" id="burned" checked>
-              <label class="achievement-list__name" for="burned">Обгорел на пляже</label>
+              <input class="form__input-check" type="checkbox" name="self-burned" id="burned" checked>
+              <label class="form__label" for="burned">Обгорел на пляже</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="see-chuck" id="chuck">
-              <label class="achievement-list__name" for="chuck">Видел Чака Норриса</label>
+              <input class="form__input-check" type="checkbox" name="see-chuck" id="chuck">
+              <label class="form__label" for="chuck">Видел Чака Норриса</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="buy-souvenir" id="souvenir">
-              <label class="achievement-list__name" for="souvenir">Накупил сувениров</label>
+              <input class="form__input-check" type="checkbox" name="buy-souvenir" id="souvenir">
+              <label class="form__label" for="souvenir">Накупил сувениров</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="save-fort" id="fort" checked>
-              <label class="achievement-list__name" for="fort">Удержал башню</label>
+              <input class="form__input-check" type="checkbox" name="save-fort" id="fort" checked>
+              <label class="form__label" for="fort">Удержал башню</label>
             </li>
             <li class="achievement-list__item">
-              <input type="checkbox" name="hotel-crashed" id="crash">
-              <label class="achievement-list__name" for="crash">Разгромил отель</label>
+              <input class="form__input-check" type="checkbox" name="hotel-crashed" id="crash">
+              <label class="form__label" for="crash">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__user-contacts">
           <p class="form__number">
-            <label class="form__user-contacts-name" for="number">Номер телефона:</label>
-            <input type="text" id="number" name="phone-number" placeholder="Номер, пожалуйста">
+            <label class="form__label--red" for="number">Номер телефона:</label>
+            <input class="form__input" type="text" id="number" name="phone-number" placeholder="Номер, пожалуйста">
           </p>
           <p class="form__mail">
-            <label class="form__user-contacts-name" for="mail">Адрес почты:</label>
-            <input type="text" id="mail" name="e-mail" placeholder="Введите почту*">
+            <label class="form__label--red" for="mail">Адрес почты:</label>
+            <input class="form__input" type="text" id="mail" name="e-mail" placeholder="Введите почту*">
           </p>
         </fieldset>
         <fieldset class="form__user-app">
-          <legend>С каким приложением путешествовали?</legend>
+          <legend class="form__legend">С каким приложением путешествовали?</legend>
           <ul class="form__applications-list application-list">
             <li class="application-list__item">
-              <label class="application-list__label-name" for="ios">
-              <input type="radio" name="ios-system" id="ios">Pink для iOS
-              </label>
+              <input class="form__input-radio" type="radio" name="ios-system" id="ios">
+              <label class="form__label" for="ios">Pink для iOS</label>
             </li>
             <li class="application-list__item">
-              <label class="application-list__label-name" for="android">
-              <input type="radio" name="android-system" id="android">Pink на Android
-              </label>
+              <input class="form__input-radio" type="radio" name="android-system" id="android">
+              <label class="form__label" for="android">Pink на Android</label>
             </li>
             <li class="application-list__item">
-              <label class="application-list__label-name" for="windows-phone">
-              <input type="radio" name="windows-phone-system" id="windows-phone">Windows Phone
-              </label>
+              <input class="form__input-radio" type="radio" name="windows-phone-system" id="windows-phone">
+              <label class="form__label" for="windows-phone">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__user-emotions">
-          <legend>Опишите свои эмоции</legend>
-          <textarea name="emotions" id="emotions-fiels" rows="10">Можно прям в красках, не стесняясь в выражениях
+          <legend class="form__legend">Опишите свои эмоции</legend>
+          <textarea class="form__user-emotions-area" name="emotions" id="emotions-fields" rows="10">Можно прям в красках, не стесняясь в выражениях
           </textarea>
         </fieldset>
         <button class="form__submit button" type="submit">Отправить форму</button>
@@ -133,8 +124,10 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип">
-        <a class="page-footer__logo-name" href="#">Pink</a>
+        <a class="page-footer__logo-name" href="#">
+          <img src="http://placehold.it/150x100" alt="Логотип">
+          Pink
+        </a>
       </div>
       <ul class="page-footer__socials-list social-list">
         <li class="social-list__item"><a class="social-twitter" href="#">twitter</a></li>
