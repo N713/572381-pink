@@ -1,7 +1,7 @@
 .advantage-list {
   padding: 0;
   list-style: none;
-  width: 320px;
+  width: $w-mobile;
   background-color: #f2f2f2;
   border: 1px solid blue;
 }
@@ -9,7 +9,7 @@
 .advantage-list__item-head {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: $f-bold;
   text-transform: none;
   text-align: center;
 }
@@ -17,6 +17,6 @@
 .advantage-list__item-paragraph {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: $f-regular;
   text-align: center;
 }

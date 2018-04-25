@@ -4,9 +4,9 @@
 
 .photos__paragraph {
   color: #283645;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $f-family;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $f-regular;
   line-height: 30px;
   text-align: center;
 }

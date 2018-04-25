@@ -5,7 +5,7 @@
 .plan-table__item-name {
   color: #ffffff;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: $f-bold;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -13,7 +13,7 @@
 
 .plan-table__item-hit {
   color: #ffffff;
-  font-weight: 400;
+  font-weight: $f-regular;
   text-trandform: uppercase;
   background-color: #d22856;
 }
@@ -21,7 +21,7 @@
 .plan-table__item-cost {
   color: #ffffff;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: $f-light;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -30,7 +30,7 @@
 .plan-table__item-option {
   color: #283645;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $f-regular;
   line-height: 30px;
   text-transform: uppercase;
   text-align: left;

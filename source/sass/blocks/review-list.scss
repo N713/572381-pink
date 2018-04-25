@@ -6,7 +6,7 @@
 .review-list__name {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: $f-bold;
   text-transform: none;
   text-align: center;
 }
@@ -14,7 +14,7 @@
 .review-list__paragraph {
   color: #283645;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $f-regular;
   line-height: 30px;
   text-align: center;
 }
