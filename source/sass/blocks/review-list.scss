@@ -4,9 +4,11 @@
 }
 
 .review-list__name {
+  color: $font-color-white;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 24px;
-  font-weight: $f-bold;
+  line-height: 30px;
+  font-weight: 700;
   text-transform: none;
   text-align: center;
 }
