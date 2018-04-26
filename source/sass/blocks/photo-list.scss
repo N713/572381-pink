@@ -12,7 +12,7 @@
 .photo-list__item-paragraph--day {
   color: #ffffff;
   font-size: 12px;
-  font-weight: $f-bold;
+  font-weight: $font-bold;
   line-height: 24px;
   text-transform: uppercase;
   background-color: #d22856;
@@ -20,19 +20,19 @@
 
 .photo-list__item-name {
   font-size: 14px;
-  font-weight: $f-bold;
+  font-weight: $font-bold;
   line-height: 24px;
 }
 
 .photo-list__item-time {
   font-size: 12px;
-  font-weight: $f-light;
+  font-weight: $font-light;
   text-transform: uppercase;
 }
 
 .photo-list__item-comment {
   font-size: 14px;
-  font-weight: $f-regular;
+  font-weight: $font-regular;
   line-height: 24px;
 }
 
@@ -40,7 +40,7 @@
 .photo-list__like-count {
   color: #d22856;
   font-size: 12px;
-  font-weight: $f-regular;
+  font-weight: $font-regular;
   line-height: 24px;
   text-transform: uppercase;
 }

@@ -1,13 +1,13 @@
 .navigation {
   background-color: #283645;
   border: 1px solid #cc1455;
-  width: $w-mobile;
+  width: $layout-width-mobile;
 }
 
 .navigation__link {
   width: 143px;
   color: #ffffff;
   font-size: 18px;
-  font-weight: $f-bold;
+  font-weight: $font-bold;
   line-height: 32px;
 }

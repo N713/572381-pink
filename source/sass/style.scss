@@ -1,5 +1,5 @@
-@import "blocks/fonts";
-@import "blocks/variables";
+@import "fonts";
+@import "variables";
 @import "blocks/navigation";
 @import "blocks/page-header";
 @import "blocks/download-application";
@@ -26,6 +26,8 @@
 @import "blocks/application-list";
 
 body {
+  font-family: $font-family;
   background-color: teal;
   width: $layout-width-mobile;
+  margin: 0 auto;
 }

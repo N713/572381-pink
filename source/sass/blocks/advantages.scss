@@ -1,13 +1,13 @@
 .advantages {
-  width: $w-mobile;
+  width: $layout-width-mobile;
   border: 1px solid green;
 }
 
 .advantages__advantages-paragraph {
   color: #283645;
-  font-family: $f-family;
+  font-family: $font-family;
   font-size: 24px;
-  font-weight: $f-light;
+  font-weight: $font-light;
   text-transform: none;
   text-align: center;
 }
