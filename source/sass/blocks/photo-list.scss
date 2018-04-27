@@ -1,0 +1,49 @@
+.photo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-list__item {
+  background-color: #f2f2f2;
+  margin-bottom: 2px;
+}
+
+.photo-list__item-paragraph--day {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: $font-bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #d22856;
+}
+
+.photo-list__item-name {
+  color: #283645;
+  font-size: 14px;
+  font-weight: $font-bold;
+  line-height: 24px;
+}
+
+.photo-list__item-time {
+  color: #283645;
+  font-size: 12px;
+  font-weight: $font-light;
+  text-transform: uppercase;
+}
+
+.photo-list__item-comment {
+  color: #283645;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 24px;
+}
+
+.photo-list__item-like-number,
+.photo-list__like-count {
+  color: #d22856;
+  font-size: 12px;
+  font-weight: $font-regular;
+  line-height: 24px;
+  text-transform: uppercase;
+}

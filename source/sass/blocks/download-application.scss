@@ -1,14 +1,22 @@
 .download-application {
   background-color: #283645;
   border: 1px solid cyan;
-  width: 320px;
+  width: $layout-width-mobile;
+  text-align: center;
 }
 
 .download-application__download-paragraph {
   color: #ffffff;
-  font-family: "Open Sans" Arial, sans-serif;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: $font-light;
   line-height: 24px;
   text-transform: none;
+}
+
+.download-application__download-button {
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #1d2631;
 }

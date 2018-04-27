@@ -1,0 +1,13 @@
+.form-main {
+  width: $layout-width-mobile;
+  border: 1px solid green;
+  background-color: #ffffff;
+}
+
+.form-main__paragraph {
+  color: #283645;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  text-align: center;
+}
