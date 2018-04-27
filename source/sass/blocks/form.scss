@@ -37,3 +37,27 @@
 .form__sup {
   color: #d22856;
 }
+
+.form__legend {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__label {
+  color: #283645;
+  font-size: 18px;
+  font-weight: $font-regular;
+  line-height: 30px;
+}
+
+.form__submit {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+}
