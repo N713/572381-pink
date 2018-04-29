@@ -12,15 +12,15 @@
   text-align: center;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .advantages {
     width: $layout-width-tablet;
   }
 
   .advantages__advantages-paragraph {
     font-size: 40px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .advantages__wrapper {

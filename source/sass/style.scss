@@ -36,7 +36,7 @@ body {
   margin: 0 auto;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   body {
     width: $layout-width-tablet;
   }

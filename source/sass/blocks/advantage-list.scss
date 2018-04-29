@@ -26,7 +26,7 @@
   border: 1px solid orange;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .advantage-list {
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     text-align: left;
   }
 
-  .advantage-list__image-division{
+  .advantage-list__image-division {
     width: 330px;
   }
 }

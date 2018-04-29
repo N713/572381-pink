@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .extra {
     display: flex;
     width: $layout-width-tablet;

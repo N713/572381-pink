@@ -11,7 +11,7 @@
   margin: auto;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .page-footer {
     width: $layout-width-tablet;
     display: flex;

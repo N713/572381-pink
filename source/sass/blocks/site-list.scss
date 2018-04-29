@@ -10,10 +10,10 @@
 
 .site-list__item {
   box-shadow: 0 1px 0 #000000,
-  inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .site-list__item {
     padding-top: 26px;
     padding-bottom: 26px;

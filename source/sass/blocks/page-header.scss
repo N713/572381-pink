@@ -20,7 +20,7 @@
   list-style: none;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .page-header {
     width: $layout-width-tablet;
     display: flex;
