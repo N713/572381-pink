@@ -8,3 +8,9 @@
     width: $layout-width-tablet;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .reviews {
+    width: $layout-width-desktop;
+  }
+}

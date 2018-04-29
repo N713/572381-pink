@@ -77,3 +77,23 @@
     margin-top: 44px;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .download-application {
+    width: $layout-width-desktop;
+  }
+
+  .download-application__details {
+    width: 430px;
+    flex-grow: 0;
+  }
+
+  .download-application__index-phone-image {
+    width: 770px;
+  }
+
+  .download-application__title {
+    margin: 0 auto;
+    margin-top: 121px;
+  }
+}

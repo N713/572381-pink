@@ -18,3 +18,14 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .page-footer {
+    width: $layout-width-desktop;
+    justify-content: space-around;
+  }
+
+  .page-footer__developer {
+    margin: auto 0;
+  }
+}

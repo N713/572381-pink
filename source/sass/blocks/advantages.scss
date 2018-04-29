@@ -28,3 +28,9 @@
     flex-direction: row-reverse;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .advantages {
+    width: $layout-width-desktop;
+  }
+}

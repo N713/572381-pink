@@ -45,3 +45,13 @@
     margin-bottom: 150px;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .page-header {
+    width: $layout-width-desktop;
+  }
+
+  .page-header__list {
+    display: none;
+  }
+}

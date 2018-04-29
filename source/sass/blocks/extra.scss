@@ -10,7 +10,7 @@
     background-color: $font-color-white;
   }
 
-  .advantage-list__image {
+  .extra__image {
     display: block;
     width: 330px;
     border: 1px solid green;
@@ -37,5 +37,16 @@
     line-height: 24px;
     font-weight: $font-regular;
     color: #d22856;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .extra {
+    min-width: $layout-width-desktop;
+    justify-content: space-around;
+  }
+
+  .extra__description {
+    width: 525px;
   }
 }

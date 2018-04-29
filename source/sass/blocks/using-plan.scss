@@ -12,3 +12,9 @@
     width: $layout-width-tablet;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .using-plan {
+    width: $layout-width-desktop;
+  }
+}

@@ -53,3 +53,10 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .review-list__paragraph {
+    width: 685px;
+    margin: 0 auto;
+  }
+}

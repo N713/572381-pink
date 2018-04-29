@@ -20,3 +20,13 @@
     font-size: 40px;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .contacts {
+    width: $layout-width-desktop;
+  }
+
+  .contacts__paragraph {
+    font-size: 50px;
+  }
+}

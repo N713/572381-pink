@@ -2,3 +2,15 @@
   width: $layout-width-mobile;
   background-color: #ffffff;
 }
+
+@media (min-width: $layout-width-tablet) {
+  .index-main {
+    width: $layout-width-tablet;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .index-main {
+    width: $layout-width-desktop;
+  }
+}

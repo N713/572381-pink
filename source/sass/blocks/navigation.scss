@@ -22,3 +22,12 @@
     width: $layout-width-tablet;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .navigation {
+    width: $layout-width-desktop;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
