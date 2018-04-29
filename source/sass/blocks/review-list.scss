@@ -5,18 +5,50 @@
 
 .review-list__name {
   color: #000000;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-family: $font-family;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: font-bold;
   text-transform: none;
   text-align: center;
 }
 
 .review-list__paragraph {
-  color: #283645;
   font-size: 14px;
   font-weight: $font-regular;
+  color: #283645;
   line-height: 30px;
   text-align: center;
+}
+
+.review-list__profession {
+  display: none;
+  text-align: center;
+}
+
+.rewiews__toggles {
+  text-align: center;
+}
+
+@media(min-width: $layout-width-tablet) {
+  .review-list__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .review-list__paragraph {
+    font-size: 18px;
+  }
+
+  .review-list__profession {
+    display: block;
+    font-size: 14px;
+    font-weight: $font-regular;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .review-list__name {
+    margin: 0;
+    font-size: 20px;
+  }
 }

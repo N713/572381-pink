@@ -2,6 +2,8 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #2a3a4a;
   border: 1px solid yellow;
+  diaplay: flex;
+  flex-wrap: wrap;
 }
 
 .page-header__title {
@@ -12,4 +14,22 @@
   color: #ffffff;
   width: 240px;
   margin: 0 auto;
+}
+
+.page-header__list {
+  list-style: none;
+}
+
+@media(min-width: $layout-width-tablet) {
+  .page-header {
+    width: $layout-width-tablet;
+    display: flex;
+  }
+
+  .page-header__list {
+    width: $layout-width-tablet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

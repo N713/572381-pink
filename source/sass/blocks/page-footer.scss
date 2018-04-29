@@ -6,3 +6,15 @@
   font-weight: $font-regular;
   line-height: 18px;
 }
+
+.page-footer__developer {
+  margin: auto;
+}
+
+@media(min-width: $layout-width-tablet) {
+  .page-footer {
+    width: $layout-width-tablet;
+    display: flex;
+    justify-content: space-between;
+  }
+}

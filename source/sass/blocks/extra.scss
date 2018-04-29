@@ -1,0 +1,41 @@
+.extra {
+  display: none;
+}
+
+@media(min-width: $layout-width-tablet) {
+  .extra {
+    display: flex;
+    width: $layout-width-tablet;
+    font-family: $font-family;
+    background-color: $font-color-white;
+  }
+
+  .advantage-list__image {
+    display: block;
+    width: 330px;
+    border: 1px solid green;
+  }
+
+  .extra__description {
+    width: 330px;
+  }
+
+  .extra__allday {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .extra__british-scientists {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: $font-regular;
+    color: $color-main;
+  }
+
+  .extra__link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: $font-regular;
+    color: #d22856;
+  }
+}

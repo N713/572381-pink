@@ -17,3 +17,18 @@
   font-weight: $font-light;
   text-align: center;
 }
+
+@media(min-width: $layout-width-tablet) {
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-top: 57px;
+  }
+
+  .contact-list__item {
+    width: 330px;
+    flex-shrink: 0;
+    margin: 0 auto;
+  }
+}

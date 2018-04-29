@@ -1,7 +1,7 @@
 .advantage-list {
   padding: 0;
+  margin: 0;
   list-style: none;
-  width: $layout-width-mobile;
   background-color: #f2f2f2;
   border: 1px solid blue;
   text-align: center;
@@ -19,4 +19,26 @@
   line-height: 24px;
   font-weight: $font-regular;
   text-align: center;
+  color: $color-main;
+}
+
+.advantage-list__image-division {
+  border: 1px solid orange;
+}
+
+@media(min-width: $layout-width-tablet) {
+  .advantage-list {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    text-align: left;
+  }
+
+  .advantage-list__description {
+    text-align: left;
+  }
+
+  .advantage-list__image-division{
+    width: 330px;
+  }
 }
