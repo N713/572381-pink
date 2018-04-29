@@ -10,3 +10,10 @@
   font-weight: $font-bold;
   line-height: 18px;
 }
+
+@media (min-width: $layout-width-desktop) {
+  .buttons-list {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -18,3 +18,19 @@
     width: 330px;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .editor {
+    width: $layout-width-desktop;
+  }
+
+  .editor__field {
+    width: 940px;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .editor__wrapper {
+    width: 770px;
+  }
+}

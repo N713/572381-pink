@@ -25,3 +25,9 @@
     margin-bottom: 75px;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .form-main {
+    width: $layout-width-desktop;
+  }
+}

@@ -9,3 +9,9 @@
     width: $layout-width-tablet;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .photo-main {
+    width: $layout-width-desktop;
+  }
+}

@@ -54,4 +54,14 @@
   .page-header__list {
     display: none;
   }
+
+  .page-header__describe {
+    width: $layout-width-desktop;
+  }
+
+  .page-header__title {
+    margin: 0 auto;
+    margin-top: 81px;
+    margin-bottom: 150px;
+  }
 }

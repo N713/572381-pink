@@ -24,3 +24,9 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .after-photos {
+    width: $layout-width-desktop;
+  }
+}

@@ -65,3 +65,9 @@
     border: 1px solid cyan;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .photo-list__item-wrapper {
+    width: $layout-width-desktop;
+  }
+}
