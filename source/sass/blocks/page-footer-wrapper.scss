@@ -1,0 +1,9 @@
+.page-footer-wrapper {
+  display: none;
+}
+
+@media(min-width: $layout-width-tablet) {
+  .page-footer-wrapper {
+    display: block;
+  }
+}
