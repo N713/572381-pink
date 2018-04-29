@@ -1,0 +1,12 @@
+.buttons-list {
+  list-style: none;
+  border: 1px solid darkblue;
+}
+
+.buttons-list__button {
+  width: 260px;
+  color: #d22856;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 18px;
+}
