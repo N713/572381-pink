@@ -1,6 +1,6 @@
 .advantages {
-  width: $layout-width-mobile;
   border: 1px solid green;
+  background-color: #ffffff;
 }
 
 .advantages__advantages-paragraph {
@@ -10,4 +10,21 @@
   font-weight: $font-light;
   text-transform: none;
   text-align: center;
+}
+
+@media(min-width: $layout-width-tablet) {
+  .advantages {
+    width: $layout-width-tablet;
+  }
+
+  .advantages__advantages-paragraph {
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
