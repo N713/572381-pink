@@ -49,6 +49,7 @@
 @media (min-width: $layout-width-desktop) {
   .page-header {
     width: $layout-width-desktop;
+    margin: 0 auto;
   }
 
   .page-header__list {
