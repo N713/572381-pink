@@ -57,12 +57,15 @@
 
   .photo-list__item-wrapper {
     border: 1px solid violet;
-    width: $layout-width-tablet;
   }
 
   .photo-list__item {
     flex-basis: 300px;
     border: 1px solid cyan;
+  }
+
+  .photo-list__item--full {
+    flex-basis: $layout-width-tablet;
   }
 }
 
