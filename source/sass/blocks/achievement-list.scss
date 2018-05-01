@@ -7,3 +7,14 @@
   font-weight: $font-regular;
   line-height: 30px;
 }
+
+@media (min-width: $layout-width-desktop) {
+  .achievement-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .achievement-list__item {
+    width: 255px;
+  }
+}

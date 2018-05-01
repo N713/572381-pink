@@ -2,10 +2,19 @@
   border: 1px solid yellow;
 }
 
-.photos__paragraph {
-  color: #283645;
-  font-size: 14px;
-  font-weight: $font-regular;
-  line-height: 30px;
-  text-align: center;
+@media (min-width: $layout-width-tablet) {
+  .photos__paragraph {
+    width: 450px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-main;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .photos__paragraph {
+    width: 600px;
+  }
 }

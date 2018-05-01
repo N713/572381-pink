@@ -1,8 +1,12 @@
 .download-application {
   background-color: #283645;
   border: 1px solid cyan;
-  width: $layout-width-mobile;
   text-align: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.download-application__details {
+  background-color: #1d2631;
 }
 
 .download-application__download-paragraph {
@@ -14,9 +18,82 @@
 }
 
 .download-application__download-button {
+  font-family: $font-family;
   font-size: 18px;
   font-weight: $font-bold;
   line-height: 18px;
   color: #ffffff;
   background-color: #1d2631;
+}
+
+.download-application__title {
+  display: none;
+}
+
+.download-application__index-phone-image {
+  border: 1px solid blue;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .download-application {
+    display: flex;
+    flex-grow: 0;
+    flex-direction: row-reverse;
+    width: $layout-width-tablet;
+    height: 620px;
+  }
+
+  .download-application__title {
+    display: block;
+    margin: 0;
+    margin-top: 103px;
+    padding: 0;
+    width: 186px;
+    font-family: $font-family;
+    color: $font-color-white;
+    font-size: 40px;
+    font-weight: $font-light;
+    margin-left: 78px;
+  }
+
+  .download-application__download-button {
+    margin-top: 39px;
+  }
+
+  .download-application__details {
+    margin: 0;
+    padding: 0;
+    width: 330px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .download-application__index-phone-image {
+    margin: 0;
+    padding: 0;
+    width: 330px;
+  }
+
+  .download-application__download-paragraph {
+    margin-top: 44px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .download-application {
+    width: $layout-width-desktop;
+  }
+
+  .download-application__details {
+    width: 430px;
+    flex-grow: 0;
+  }
+
+  .download-application__index-phone-image {
+    width: 770px;
+  }
+
+  .download-application__title {
+    margin: 0 auto;
+    margin-top: 121px;
+  }
 }

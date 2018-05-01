@@ -25,10 +25,29 @@
 @import "blocks/achievement-list";
 @import "blocks/application-list";
 @import "blocks/download-list";
+@import "blocks/extra";
+@import "blocks/social-list";
+@import "blocks/page-footer-wrapper";
+@import "blocks/after-photos";
+@import "blocks/buttons-list";
+@import "blocks/tool-list";
+@import "blocks/tool-list-lone";
 
 body {
   font-family: $font-family;
-  background-color: teal;
+  background-color: $color-main;
   width: $layout-width-mobile;
   margin: 0 auto;
+}
+
+@media (min-width: $layout-width-tablet) {
+  body {
+    width: $layout-width-tablet;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  body {
+    width: 100%;
+  }
 }

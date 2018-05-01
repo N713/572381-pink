@@ -2,3 +2,19 @@
   border: 1px solid red;
   background-color: #f2f2f2;
 }
+
+.using-plan__toggles {
+  text-align: center;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .using-plan {
+    width: $layout-width-tablet;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .using-plan {
+    width: $layout-width-desktop;
+  }
+}

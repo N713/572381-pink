@@ -3,3 +3,16 @@
   border: 1px solid green;
   background-color: white;
 }
+
+@media (min-width: $layout-width-tablet) {
+  .photo-main {
+    width: $layout-width-tablet;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .photo-main {
+    width: $layout-width-desktop;
+    margin: 0 auto;
+  }
+}
