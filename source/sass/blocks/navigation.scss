@@ -7,7 +7,7 @@
 }
 
 .navigation__link {
-  width: 143px;
+  width: 100%;
   color: #ffffff;
   font-size: 18px;
   font-weight: $font-bold;
@@ -17,8 +17,21 @@
   text-align: center;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .navigation {
     width: $layout-width-tablet;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .navigation {
+    width: $layout-width-desktop;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .navigation__link {
+    width: 143px;
   }
 }

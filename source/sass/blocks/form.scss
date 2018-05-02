@@ -46,11 +46,20 @@
   text-transform: uppercase;
 }
 
+.form__legend--contact {
+  display: none;
+}
+
 .form__label {
   color: #283645;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: $font-regular;
   line-height: 30px;
+}
+
+.form__label--red {
+  color: #d22856;
+  font-size: 14px;
 }
 
 .form__submit {
@@ -60,4 +69,108 @@
   line-height: 30px;
   text-transform: uppercase;
   background-color: #2aab6d;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .form__name {
+    display: flex;
+  }
+
+  .form__input {
+    flex-grow: 1;
+    margin-left: 22px;
+    margin-right: 22px;
+    padding-left: 22px;
+    color: #283645;
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .form__legend {
+    text-align: center;
+  }
+
+  .form__number,
+  .form__mail {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form__user-emotions {
+    padding-left: 82px;
+  }
+
+  .form__user-emotions-area {
+    width: 496px;
+    height: 189px;
+    border: 2px solid #e5e5e5;
+    color: $color-main;
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: $font-regular;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .form__button-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 71px;
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .form {
+    width: $layout-width-desktop;
+    box-sizing: border-box;
+    padding: 0 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .form__legend--contact {
+    display: block;
+  }
+
+  .form__username {
+    order: 2;
+    width: 431px;
+  }
+
+  .form__user-achievements {
+    order: 4;
+  }
+
+  .form__user-contacts {
+    order: 3;
+  }
+
+  .form__user-app {
+    order: 2;
+    width: 431px;
+    align-self: flex-end;
+    margin-top: -150px;
+  }
+
+  .form__user-emotions {
+    order: 5;
+  }
+
+  .form__button-wrap {
+    order: 6;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form__user-emotions-area {
+    margin: 45px auto;
+    width: 816px;
+  }
 }
