@@ -9,7 +9,7 @@
   margin-bottom: 2px;
 }
 
-.photo-list__item-paragraph--day {
+.photo-list__item-paragraph-day {
   color: #ffffff;
   font-size: 12px;
   font-weight: $font-bold;
@@ -46,4 +46,31 @@
   font-weight: $font-regular;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .photo-list__item-wrapper {
+    border: 1px solid violet;
+  }
+
+  .photo-list__item {
+    flex-basis: 300px;
+    border: 1px solid cyan;
+  }
+
+  .photo-list__item--full {
+    flex-basis: $layout-width-tablet;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .photo-list__item-wrapper {
+    width: $layout-width-desktop;
+  }
 }

@@ -34,7 +34,7 @@
   border: 1px solid blue;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .download-application {
     display: flex;
     flex-grow: 0;
@@ -64,7 +64,7 @@
     margin: 0;
     padding: 0;
     width: 330px;
-    background-color: rgba(255,255,255, 0);
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .download-application__index-phone-image {
@@ -75,5 +75,25 @@
 
   .download-application__download-paragraph {
     margin-top: 44px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .download-application {
+    width: $layout-width-desktop;
+  }
+
+  .download-application__details {
+    width: 430px;
+    flex-grow: 0;
+  }
+
+  .download-application__index-phone-image {
+    width: 770px;
+  }
+
+  .download-application__title {
+    margin: 0 auto;
+    margin-top: 121px;
   }
 }

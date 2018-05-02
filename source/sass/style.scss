@@ -28,16 +28,29 @@
 @import "blocks/extra";
 @import "blocks/social-list";
 @import "blocks/page-footer-wrapper";
+<<<<<<< HEAD
+=======
+@import "blocks/after-photos";
+@import "blocks/buttons-list";
+@import "blocks/tool-list";
+@import "blocks/tool-list-lone";
+>>>>>>> 72963e8f96bd0f147a6e8a5e61bc7ae06674d520
 
 body {
   font-family: $font-family;
-  background-color: teal;
+  background-color: $color-main;
   width: $layout-width-mobile;
   margin: 0 auto;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   body {
     width: $layout-width-tablet;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  body {
+    width: 100%;
   }
 }

@@ -1,0 +1,10 @@
+.tool-list-lone {
+  list-style: none;
+  border: 1px solid lightblue;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .tool-list-lone {
+    display: none;
+  }
+}

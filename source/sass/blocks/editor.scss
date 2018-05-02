@@ -2,9 +2,35 @@
   background-color: #f2f2f2;
 }
 
-.editor__button {
-  color: #d22856;
-  font-size: 18px;
-  font-weight: $font-bold;
-  line-height: 18px;
+@media (min-width: $layout-width-tablet) {
+  .editor__field {
+    display: flex;
+  }
+
+  .editor__image {
+    flex-basis: 320px;
+  }
+
+  .editor__wrapper {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .editor {
+    width: $layout-width-desktop;
+  }
+
+  .editor__field {
+    width: 940px;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .editor__wrapper {
+    width: 770px;
+  }
 }

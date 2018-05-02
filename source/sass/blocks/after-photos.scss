@@ -1,10 +1,10 @@
-.form-main {
-  width: $layout-width-mobile;
-  border: 1px solid green;
-  background-color: #ffffff;
+.after-photos {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
-.form-main__paragraph {
+.after-photos__paragraph {
   color: #283645;
   font-size: 14px;
   font-weight: $font-regular;
@@ -13,22 +13,20 @@
 }
 
 @media (min-width: $layout-width-tablet) {
-  .form-main {
+  .after-photos {
     width: $layout-width-tablet;
+    padding-top: 74px;
+    padding-bottom: 72px;
   }
 
-  .form-main__paragraph {
+  .after-photos__paragraph {
     font-size: 18px;
-    width: 490px;
     margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 75px;
   }
 }
 
 @media (min-width: $layout-width-desktop) {
-  .form-main {
+  .after-photos {
     width: $layout-width-desktop;
-    margin: 0 auto;
   }
 }
