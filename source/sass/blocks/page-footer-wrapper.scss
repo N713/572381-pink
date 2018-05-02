@@ -1,9 +1,17 @@
+
 .page-footer-wrapper {
   display: none;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .page-footer-wrapper {
     display: block;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .page-footer-wrapper {
+    display: block;
+    margin: 0 auto;
   }
 }
