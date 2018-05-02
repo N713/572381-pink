@@ -1,0 +1,36 @@
+.tool-list {
+  list-style: none;
+  border: 1px solid darkblue;
+  padding: 0;
+}
+
+.tool-item-range {
+  display: none;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .tool-item-range {
+    display: block;
+  }
+
+  .tool-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tool-list__group {
+    flex-basis: 275px;
+    display: flex;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .tool-list {
+    flex-direction: column;
+    flex-grow: 0;
+  }
+
+  .tool-list__group {
+    flex-basis: 44px;
+  }
+}
