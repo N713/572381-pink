@@ -11,12 +11,22 @@
   font-weight: $font-light;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .contacts {
     width: $layout-width-tablet;
   }
 
   .contacts__paragraph {
     font-size: 40px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .contacts {
+    width: $layout-width-desktop;
+  }
+
+  .contacts__paragraph {
+    font-size: 50px;
   }
 }
