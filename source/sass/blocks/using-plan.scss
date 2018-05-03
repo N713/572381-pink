@@ -5,6 +5,11 @@
 
 .using-plan__toggles {
   text-align: center;
+  min-height: 102px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: $layout-width-tablet) {
