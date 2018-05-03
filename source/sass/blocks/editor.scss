@@ -1,5 +1,26 @@
-.editor {
-  background-color: #f2f2f2;
+@media (min-width: $layout-width-mobile) {
+  .editor {
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    width: $layout-width-mobile;
+    margin: 0;
+    padding: 0;
+  }
+
+  .editor__field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editor-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editor__image {
+    padding-left: 18px;
+    padding-right: 20px;
+  }
 }
 
 @media (min-width: $layout-width-tablet) {

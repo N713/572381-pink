@@ -2,6 +2,8 @@
   border: 1px solid red;
   display: flex;
   flex-direction: column;
+  padding-top: 49px;
+  padding-bottom: 48px;
 }
 
 .after-photos__paragraph {
@@ -10,6 +12,7 @@
   font-weight: $font-regular;
   line-height: 30px;
   text-align: center;
+  margin: 0;
 }
 
 @media (min-width: $layout-width-tablet) {
