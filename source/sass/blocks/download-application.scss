@@ -1,12 +1,17 @@
 .download-application {
   background-color: #283645;
-  border: 1px solid cyan;
   text-align: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  margin: 0;
+  padding: 0;
 }
 
 .download-application__details {
   background-color: #1d2631;
+  min-height: 271px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .download-application__download-paragraph {
@@ -18,12 +23,17 @@
 }
 
 .download-application__download-button {
+  margin-top: 28px;
   font-family: $font-family;
   font-size: 18px;
   font-weight: $font-bold;
   line-height: 18px;
   color: #ffffff;
   background-color: #1d2631;
+  width: 281px;
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
 }
 
 .download-application__title {
@@ -31,7 +41,12 @@
 }
 
 .download-application__index-phone-image {
-  border: 1px solid blue;
+  min-height: 398px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 @media (min-width: $layout-width-tablet) {

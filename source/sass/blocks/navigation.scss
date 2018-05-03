@@ -1,9 +1,7 @@
 .navigation {
   background-color: #283645;
-  border: 1px solid #cc1455;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .navigation__link {
@@ -15,6 +13,7 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  min-width: 145px;
 }
 
 @media (min-width: $layout-width-tablet) {
