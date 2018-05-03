@@ -1,5 +1,21 @@
 .plan-table {
   margin: 0 auto;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.plan-table tbody {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-collapse: collapse;
+}
+
+.plan-table__item-best-plan {
+  width: 276px;
+  flex-shrink: 0;
+  border: 2px solid #f2f2f2;
 }
 
 .plan-table__item--title {
@@ -42,4 +58,8 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: left;
+  border: 2px solid #f2f2f2;
+  width: 276px;
+  flex-shrink: 0;
+  background-color: #ffffff;
 }
