@@ -24,6 +24,12 @@
 
 .photo-list__item-paragraph-day {
   margin: 0;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: $font-bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #d22856;
 }
 
 .photo-list__item--full {
@@ -35,15 +41,6 @@
 .photo-list__paragraph-wrapper {
   margin: 0 20px;
   background-color: #f2f2f2;
-}
-
-.photo-list__item-paragraph-day {
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: $font-bold;
-  line-height: 24px;
-  text-transform: uppercase;
-  background-color: #d22856;
 }
 
 .photo-list__item-name {

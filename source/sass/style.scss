@@ -32,11 +32,11 @@
 @import "blocks/buttons-list";
 @import "blocks/tool-list";
 @import "blocks/tool-list-lone";
-@impoet "blocks/slider";
+@import "blocks/slider";
 
 body {
   font-family: $font-family;
-  background-color: lighten($color-main,10%);
+  background-color: lighten($color-main, 10%);
   margin: 0 auto;
 }
 

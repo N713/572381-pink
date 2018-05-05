@@ -1,5 +1,14 @@
 .achievement-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 22px;
+}
+
+.achievement-list__item {
+  margin-bottom: 53px;
 }
 
 .achievement-list__name {
