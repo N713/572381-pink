@@ -15,6 +15,11 @@
 @media (min-width: $layout-width-tablet) {
   .using-plan {
     width: $layout-width-tablet;
+    margin-top: 110px;
+  }
+
+  .using-plan__toggles {
+    display: none;
   }
 }
 

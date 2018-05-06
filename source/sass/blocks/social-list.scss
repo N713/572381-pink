@@ -9,3 +9,9 @@
 .social-list__item {
   margin: auto 5px;
 }
+
+@media (min-width: $layout-width-tablet) {
+  .social-list {
+    margin: 0;
+  }
+}

@@ -60,7 +60,7 @@
 
   .download-application__title {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 103px;
     padding: 0;
     width: 186px;
@@ -73,9 +73,16 @@
 
   .download-application__download-button {
     margin-top: 39px;
+    width: 300px;
+    border: 3px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .download-application__details {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     width: 330px;
@@ -89,7 +96,11 @@
   }
 
   .download-application__download-paragraph {
-    margin-top: 44px;
+    padding: 0;
+    margin: 0;
+    margin-top: 41px;
+    margin-bottom: 112px;
+    font-size: 18px;
   }
 }
 

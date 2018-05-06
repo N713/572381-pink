@@ -24,7 +24,24 @@
   .page-footer {
     width: $layout-width-tablet;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo,
+  .page-footer__developer {
+    margin: 0;
+  }
+
+  .page-footer__logo {
+    margin-top: 36px;
+    margin-bottom: 51px;
+    margin-left: 20px;
+  }
+
+  .page-footer__developer {
+    margin-right: 20px;
   }
 }
 

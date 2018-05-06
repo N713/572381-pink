@@ -1,10 +1,11 @@
 .advantages {
   border: 1px solid green;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .advatages__paragraph-wrapper {
-  min-height: 215px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -19,9 +20,22 @@
   text-align: center;
 }
 
+.advantages__br {
+  display: none;
+}
+
 @media (min-width: $layout-width-tablet) {
   .advantages {
     width: $layout-width-tablet;
+  }
+
+  .advatages__paragraph-wrapper {
+    margin-top: 59px;
+    margin-bottom: 45px;
+  }
+
+  .advantages__br {
+    display: block;
   }
 
   .advantages__advantages-paragraph {

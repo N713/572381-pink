@@ -11,7 +11,6 @@
   .reviews__reviews-wrapper {
     margin: 0;
     padding: 0;
-    min-height: 444px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -46,6 +45,13 @@
 @media (min-width: $layout-width-tablet) {
   .reviews {
     width: $layout-width-tablet;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .reviews__toggles {
+    margin-top: 30px;
   }
 }
 

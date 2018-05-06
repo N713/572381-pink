@@ -12,6 +12,10 @@
   border-collapse: collapse;
 }
 
+.plan-table__item {
+  display: flex;
+}
+
 .plan-table__item-best-plan {
   width: 276px;
   flex-shrink: 0;
@@ -20,6 +24,7 @@
 
 .plan-table__item--title {
   background-color: #283645;
+  display: flex;
 }
 
 .plan-table__item-name {
@@ -62,4 +67,46 @@
   width: 276px;
   flex-shrink: 0;
   background-color: #ffffff;
+}
+
+.plan-table__item-option--extra,
+.plan-table__item-best-plan--extra {
+  display: none;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .plan-table tbody {
+    width: 616px;
+  }
+
+  .plan-table__item-best-plan {
+    width: 152px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-table__item-option--extra,
+  .plan-table__item-best-plan--extra {
+    display: block;
+    width: 152px;
+  }
+
+  .plan-table__item-best-plan--extra {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+  }
+
+  .plan-table__item-option {
+    width: 152px;
+    min-height: 45px;
+    display: flex;
+  }
+
+  .plan-table__item-hidden {
+    display: none;
+  }
+
+  .plan-table__image {
+    margin: 0 auto;
+  }
 }

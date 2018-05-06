@@ -18,6 +18,8 @@
 
   .extra__description {
     width: 330px;
+    margin-left: 70px;
+    margin-right: 36px;
   }
 
   .extra__allday {
@@ -26,6 +28,10 @@
   }
 
   .extra__british-scientists {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    width: 300px;
     font-size: 14px;
     line-height: 24px;
     font-weight: $font-regular;
