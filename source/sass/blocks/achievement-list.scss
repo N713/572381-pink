@@ -17,6 +17,13 @@
   line-height: 30px;
 }
 
+@media (min-width: $layout-width-tablet) {
+  .achievement-list {
+    padding-left: 59px;
+    margin-top: 36px;
+  }
+}
+
 @media (min-width: $layout-width-desktop) {
   .achievement-list {
     display: flex;
