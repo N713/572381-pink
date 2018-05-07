@@ -2,7 +2,6 @@
   .editor {
     background-color: #f2f2f2;
     box-sizing: border-box;
-    width: $layout-width-mobile;
     margin: 0;
     padding: 0;
   }
@@ -24,19 +23,29 @@
 }
 
 @media (min-width: $layout-width-tablet) {
+  .editor {
+    width: $layout-width-tablet;
+  }
+
   .editor__field {
     display: flex;
+    flex-direction: row;
+    margin-top: 57px;
+    margin-bottom: 54px;
   }
 
   .editor__image {
-    flex-basis: 320px;
+    padding: 0;
+    margin-left: 18px;
+    margin-right: 20px;
   }
 
   .editor__wrapper {
     border: 1px solid green;
     display: flex;
     flex-direction: column;
-    width: 330px;
+    margin-right: 20px;
+    justify-content: space-between;
   }
 }
 

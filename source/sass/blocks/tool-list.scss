@@ -18,13 +18,15 @@
   }
 
   .tool-list {
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
   }
 
   .tool-list__group {
-    flex-basis: 275px;
     display: flex;
+    align-items: center;
+    min-height: 69px;
   }
 }
 

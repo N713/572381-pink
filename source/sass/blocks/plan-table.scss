@@ -65,6 +65,8 @@
   text-align: left;
   border: 2px solid #f2f2f2;
   width: 276px;
+  display: flex;
+  justify-content: space-between;
   flex-shrink: 0;
   background-color: #ffffff;
 }
@@ -72,6 +74,14 @@
 .plan-table__item-option--extra,
 .plan-table__item-best-plan--extra {
   display: none;
+}
+
+.plan-table__item-hidden {
+  margin-left: 20px;
+}
+
+.plan-table__image {
+  margin-right: 17px;
 }
 
 @media (min-width: $layout-width-tablet) {

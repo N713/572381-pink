@@ -18,13 +18,14 @@
   width: 280px;
   height: 55px;
   border: 3px solid #d22856;
-  margin-bottom: 12px;
   border-radius: 35px;
+  margin-top: 24px;
 }
 
 @media (min-width: $layout-width-desktop) {
   .buttons-list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
