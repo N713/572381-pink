@@ -274,11 +274,11 @@
 @media (min-width: $layout-width-tablet) {
   .form__name {
     display: flex;
-  }
-
-  .form__username {
+    width: $layout-width-tablet;
     margin: 0;
-    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 56px;
   }
 
   .form__user-achievements,
@@ -294,6 +294,8 @@
 
   .form__username {
     order: 1;
+    margin: 0;
+    padding: 0;
   }
 
   .form__user-achievements {
@@ -361,14 +363,6 @@
 
   .form__contacts-wrapper {
     padding-bottom: 33px;
-  }
-
-  .form__name {
-    width: $layout-width-tablet;
-    margin: 0;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 56px;
   }
 
   .form__label {
@@ -542,10 +536,6 @@
   .form__number input,
   .form__mail input {
     width: 371px;
-  }
-
-  .form__number input,
-  .form__mail input {
     margin: 0;
     margin-top: 44px;
   }
