@@ -265,6 +265,12 @@
   text-transform: uppercase;
 }
 
+.form__send-button-wrapper--failure {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: $layout-width-tablet) {
   .form__name {
     display: flex;
@@ -453,6 +459,12 @@
     margin-top: 44px;
     margin-bottom: 56px;
   }
+
+  .form__send-button-wrapper--failure {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-width: $layout-width-desktop) {
@@ -461,8 +473,10 @@
     box-sizing: border-box;
     padding: 0 130px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
   }
 
   .form__legend--contact {
@@ -471,39 +485,128 @@
 
   .form__username {
     order: 2;
-    width: 431px;
+  }
+
+  .form__name {
+    width: 435px;
+  }
+
+  .form__name label {
+    margin: 0;
+  }
+
+  .form__name input {
+    margin-right: 0;
   }
 
   .form__user-achievements {
     order: 4;
+    width: 936px;
   }
 
   .form__user-contacts {
     order: 3;
+    width: 936px;
   }
 
   .form__user-app {
     order: 2;
     width: 431px;
-    align-self: flex-end;
-    margin-top: -150px;
+    margin-top: -90px;
   }
 
   .form__user-emotions {
     order: 5;
+    width: 936px;
   }
 
   .form__button-wrap {
     order: 6;
+    width: 936px;
   }
 
   .form__contacts-wrapper {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+
+  .form__number,
+  .form__mail {
+    padding: 0;
+    width: 371px;
+  }
+
+  .form__number input,
+  .form__mail input {
+    width: 371px;
+  }
+
+  .form__number input,
+  .form__mail input {
+    margin: 0;
+    margin-top: 44px;
+  }
+
+  .form__number label,
+  .form__mail label {
+    width: 300px;
+    margin-top: 21px;
+    margin-bottom: 20px;
   }
 
   .form__user-emotions-area {
     margin: 45px auto;
+    margin-top: 26px;
     width: 816px;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .form__submit {
+    width: 296px;
+    height: 59px;
+  }
+
+  .form__send {
+    width: 782px;
+  }
+
+  .form__send-b {
+    width: auto;
+  }
+
+  .form__send-paragraph {
+    width: 400px;
+  }
+
+  .form__send-paragraph br {
+    display: none;
+  }
+
+  .form__send-button-wrapper {
+    min-height: 163px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 39px;
+  }
+
+  .form__send-button {
+    width: 456px;
+    height: 59px;
+  }
+
+  .form__send-button-wrapper--failure {
+    background-color: #f2f2f2;
+    margin-top: 62px;
+  }
+
+  .form__send-button--failure {
+    width: 296px;
   }
 }

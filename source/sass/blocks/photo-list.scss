@@ -163,4 +163,20 @@
   .photo-list__item-wrapper {
     width: $layout-width-desktop;
   }
+
+  .photo-list__paragraph-wrapper {
+    width: 940px;
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+
+  .photo-list--other {
+    padding: 0 130px;
+    justify-content: space-between;
+  }
+
+  .photo-list--other .photo-list__item {
+    margin: 0;
+    margin-top: 50px;
+  }
 }

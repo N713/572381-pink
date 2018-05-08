@@ -23,15 +23,17 @@
         </li>
       </ul>
       <nav class="navigation">
-        <ul class="navigation__list site-list">
+        <ul class="navigation__list site-list site-list--logo">
           <li class="site-list__item site-list__item--logo">
-            <a class="navigation__link" href="#"><img src="http://placehold.it/150x40" alt="Логотип"></a>
+            <a class="navigation__link navigation__link--logo" href="#"><img src="http://placehold.it/150x40" alt="Логотип"></a>
+          </li>
+        </ul>
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a class="navigation__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="navigation__link">Фотографии</a>
+            <a class="navigation__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="navigation__link" href="form.html">Конкурс</a>
@@ -42,7 +44,7 @@
         </ul>
       </nav>
       <div class="page-header__describe">
-        <p class="page-header__title">Фотографии пользователей</p>
+        <p class="page-header__title">Фотографии<br class="page-header__title-br"> пользователей</p>
       </div>
     </header>
     <main class="photo-main">
@@ -70,6 +72,8 @@
                 </div>
             </div>
           </li>
+        </ul>
+        <ul class="photos__photos-list photo-list photo-list--other">
           <li class="photo-list__item">
             <img class="photo-list__image" src="http://placehold.it/280x180" alt="Фото">
             <p class="photo-list__item-name">Левон
