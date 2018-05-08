@@ -57,6 +57,10 @@
   margin-top: 45px;
 }
 
+.advantage-list__description-br {
+  display: none;
+}
+
 @media (min-width: $layout-width-tablet) {
   .advantage-list {
     display: flex;
@@ -92,6 +96,27 @@
     flex-direction: row;
     width: $layout-width-desktop;
     text-align: center;
+    padding: 0 130px;
+  }
+
+  .advantage-list__title {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+
+  .advantage-list__item {
+    width: 300px;
+    margin-bottom: 56px;
+  }
+
+  .advantage-list__description {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 25px;
+  }
+
+  .advantage-list__description-br {
+    display: block;
   }
 
   .advantage-list__item-image {
