@@ -1,6 +1,14 @@
 .review-list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  margin-top: 49px;
+}
+
+.review-list__item {
+  diplay: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .review-list__name {
@@ -11,22 +19,21 @@
   font-weight: font-bold;
   text-transform: none;
   text-align: center;
+  margin: 0;
 }
 
 .review-list__paragraph {
   font-size: 14px;
   font-weight: $font-regular;
-  color: #283645;
+  color: $color-main;
   line-height: 30px;
   text-align: center;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .review-list__profession {
   display: none;
-  text-align: center;
-}
-
-.rewiews__toggles {
   text-align: center;
 }
 
@@ -37,6 +44,7 @@
   }
 
   .review-list__paragraph {
+    margin: 0;
     font-size: 18px;
   }
 
@@ -50,6 +58,7 @@
 
   .review-list__name {
     margin: 0;
+    margin-top: 44px;
     font-size: 20px;
   }
 }
@@ -58,5 +67,14 @@
   .review-list__paragraph {
     width: 685px;
     margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .review-list__profession {
+    font-size: 18px;
+  }
+
+  .review-list__name {
+    font-size: 24px;
   }
 }

@@ -2,6 +2,11 @@
   list-style: none;
   border: 1px solid darkblue;
   padding: 0;
+  margin: 0;
+  margin-top: 42px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .tool-item-range {
@@ -14,13 +19,17 @@
   }
 
   .tool-list {
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
   }
 
   .tool-list__group {
-    flex-basis: 275px;
     display: flex;
+    align-items: center;
+    min-height: 69px;
+    border-top: 1px solid #dedfe1;
+    border-bottom: 1px solid #dedfe1;
   }
 }
 
@@ -28,9 +37,6 @@
   .tool-list {
     flex-direction: column;
     flex-grow: 0;
-  }
-
-  .tool-list__group {
-    flex-basis: 44px;
+    width: 410px;
   }
 }

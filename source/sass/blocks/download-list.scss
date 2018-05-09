@@ -1,8 +1,17 @@
 .download-list {
+  min-width: 281px;
   margin: 0;
   margin-top: 46px;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .download-list {
+    margin: 0;
+    margin-top: 67px;
+    margin-left: 140px;
+  }
 }

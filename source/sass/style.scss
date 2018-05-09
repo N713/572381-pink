@@ -29,11 +29,15 @@
 @import "blocks/social-list";
 @import "blocks/page-footer-wrapper";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> module5-task1
 @import "blocks/after-photos";
 @import "blocks/buttons-list";
 @import "blocks/tool-list";
 @import "blocks/tool-list-lone";
+<<<<<<< HEAD
 >>>>>>> 72963e8f96bd0f147a6e8a5e61bc7ae06674d520
 
 body {
@@ -43,6 +47,22 @@ body {
   margin: 0 auto;
 }
 
+=======
+@import "blocks/slider";
+
+body {
+  font-family: $font-family;
+  background-color: lighten($color-main, 10%);
+  margin: 0 auto;
+}
+
+@media (min-width: $layout-width-mobile) {
+  body {
+    width: $layout-width-mobile;
+  }
+}
+
+>>>>>>> module5-task1
 @media (min-width: $layout-width-tablet) {
   body {
     width: $layout-width-tablet;
