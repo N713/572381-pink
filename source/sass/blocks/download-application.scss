@@ -1,12 +1,18 @@
 .download-application {
-  background-color: #283645;
-  border: 1px solid cyan;
+  background-color: $color-main;
   text-align: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  margin: 0;
+  padding: 0;
 }
 
 .download-application__details {
   background-color: #1d2631;
+  min-height: 271px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .download-application__download-paragraph {
@@ -18,12 +24,17 @@
 }
 
 .download-application__download-button {
+  margin-top: 28px;
   font-family: $font-family;
   font-size: 18px;
   font-weight: $font-bold;
   line-height: 18px;
   color: #ffffff;
   background-color: #1d2631;
+  width: 281px;
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
 }
 
 .download-application__title {
@@ -31,7 +42,11 @@
 }
 
 .download-application__index-phone-image {
-  border: 1px solid blue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -40,12 +55,11 @@
     flex-grow: 0;
     flex-direction: row-reverse;
     width: $layout-width-tablet;
-    height: 620px;
   }
 
   .download-application__title {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 103px;
     padding: 0;
     width: 186px;
@@ -58,9 +72,17 @@
 
   .download-application__download-button {
     margin-top: 39px;
+    width: 300px;
+    height: 55px;
+    border: 3px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .download-application__details {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     width: 330px;
@@ -74,7 +96,42 @@
   }
 
   .download-application__download-paragraph {
-    margin-top: 44px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .download-application {
+    width: $layout-width-desktop;
+  }
+
+  .download-application__details {
+    width: 430px;
+    flex-grow: 0;
+  }
+
+  .download-application__index-phone-image {
+    width: 770px;
+  }
+
+  .download-application__title {
+    margin-top: 121px;
+    margin-left: 166px;
+    width: 231px;
+    font-size: 50px;
+  }
+
+  .download-application__download-button {
+    margin-left: 130px;
+  }
+
+  .download-application__download-paragraph {
+    width: 300px;
+    margin-left: 132px;
+    margin-top: 60px;
+    margin-bottom: 124px;
   }
 }
 

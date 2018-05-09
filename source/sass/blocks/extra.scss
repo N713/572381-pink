@@ -18,6 +18,8 @@
 
   .extra__description {
     width: 330px;
+    margin-left: 70px;
+    margin-right: 36px;
   }
 
   .extra__allday {
@@ -26,6 +28,10 @@
   }
 
   .extra__british-scientists {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    width: 300px;
     font-size: 14px;
     line-height: 24px;
     font-weight: $font-regular;
@@ -44,9 +50,30 @@
   .extra {
     min-width: $layout-width-desktop;
     justify-content: space-around;
+    padding-top: 17px;
+    padding-bottom: 67px;
+    background-color: #f2f2f2;
+  }
+
+  .extra__allday {
+    font-size: 30px;
+  }
+
+  .extra__allday br {
+    display: none;
+  }
+
+  .extra__british-scientists,
+  .extra__link {
+    font-size: 18px;
   }
 
   .extra__description {
     width: 525px;
+    margin: 0;
+  }
+
+  .extra__image {
+    margin-left: 131px;
   }
 }

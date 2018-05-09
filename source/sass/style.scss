@@ -32,12 +32,18 @@
 @import "blocks/buttons-list";
 @import "blocks/tool-list";
 @import "blocks/tool-list-lone";
+@import "blocks/slider";
 
 body {
   font-family: $font-family;
-  background-color: $color-main;
-  width: $layout-width-mobile;
+  background-color: lighten($color-main, 10%);
   margin: 0 auto;
+}
+
+@media (min-width: $layout-width-mobile) {
+  body {
+    width: $layout-width-mobile;
+  }
 }
 
 @media (min-width: $layout-width-tablet) {

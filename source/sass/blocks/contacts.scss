@@ -1,6 +1,9 @@
 .contacts {
   border: 1px solid fuchsia;
   background-color: $font-color-white;
+  min-height: 412px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__paragraph {
@@ -9,6 +12,10 @@
   text-align: center;
   font-size: 24px;
   font-weight: $font-light;
+}
+
+.contacts__paragraph-wrapper {
+  margin-top: 50px;
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -28,5 +35,17 @@
 
   .contacts__paragraph {
     font-size: 50px;
+  }
+
+  .contact-list__item--call {
+    order: 1;
+  }
+
+  .contact-list__item--go {
+    order: 2;
+  }
+
+  .contact-list__item--write {
+    order: 3;
   }
 }

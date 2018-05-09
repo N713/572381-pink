@@ -5,11 +5,21 @@
 
 .using-plan__toggles {
   text-align: center;
+  min-height: 102px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: $layout-width-tablet) {
   .using-plan {
     width: $layout-width-tablet;
+    margin-top: 110px;
+  }
+
+  .using-plan__toggles {
+    display: none;
   }
 }
 

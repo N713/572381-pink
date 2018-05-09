@@ -1,9 +1,20 @@
 .page-header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: repeat;
   background-color: #2a3a4a;
-  border: 1px solid yellow;
-  diaplay: flex;
   flex-wrap: wrap;
+}
+
+.page-header__logo {
+  min-height: 22px;
+  min-width: 75px;
+}
+
+.page-header__describe {
+  min-height: 172px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-header__title {
@@ -18,6 +29,20 @@
 
 .page-header__list {
   list-style: none;
+  min-height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 1px 0 #000000,
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.page-header__title-br {
+  display: none;
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -31,6 +56,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__list-item {
+    margin-top: 27px;
+    margin-bottom: 43px;
   }
 
   .page-header__describe {
@@ -64,5 +95,10 @@
     margin: 0 auto;
     margin-top: 81px;
     margin-bottom: 150px;
+    width: auto;
+  }
+
+  .page-header__title-br {
+    display: block;
   }
 }
