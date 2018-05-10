@@ -1,8 +1,12 @@
 .page-header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #2a3a4a;
   flex-wrap: wrap;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x");
+  }
 }
 
 .page-header__logo {
@@ -49,6 +53,10 @@
   .page-header {
     width: $layout-width-tablet;
     display: flex;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2a3a4a;
   }
 
   .page-header__list {
@@ -81,6 +89,10 @@
   .page-header {
     width: $layout-width-desktop;
     margin: 0 auto;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2a3a4a;
   }
 
   .page-header__list {
