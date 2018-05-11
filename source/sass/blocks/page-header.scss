@@ -1,10 +1,13 @@
 .page-header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #2a3a4a;
+  background-size: $layout-width-mobile auto;
+  background-color: $color-main;
   flex-wrap: wrap;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header {
     background-image: url("../img/bg-back-mobile@2x");
   }
 }
@@ -53,10 +56,13 @@
   .page-header {
     width: $layout-width-tablet;
     display: flex;
+    background-size: $layout-width-tablet auto;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #2a3a4a;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-back-tablet@2x");
   }
 
   .page-header__list {
@@ -89,10 +95,13 @@
   .page-header {
     width: $layout-width-desktop;
     margin: 0 auto;
+    background-size: $layout-width-desktop auto;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #2a3a4a;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-back-desktop@2x");
   }
 
   .page-header__list {

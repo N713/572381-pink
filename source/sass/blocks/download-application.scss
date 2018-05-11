@@ -1,5 +1,4 @@
 .download-application {
-  background-color: $color-main;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
   margin: 0;
@@ -47,6 +46,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  width: 330px;
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -87,12 +87,6 @@
     padding: 0;
     width: 330px;
     background-color: rgba(255, 255, 255, 0);
-  }
-
-  .download-application__index-phone-image {
-    margin: 0;
-    padding: 0;
-    width: 330px;
   }
 
   .download-application__download-paragraph {

@@ -45,7 +45,11 @@
       </nav>
       <section class="download-application">
         <div class="download-application__index-phone-image">
-          <img class="download-application__image" src="http://placehold.it/310x280" alt="Мобильный">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/iphone-hand-desktop@1x.png 1x, ../img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="../img/iphone-hand-tablet@1x.png 1x, ../img/iphone-hand-tablet@2x.png 2x">
+            <img src="../img/iphone-hand-mobile@1x.png" srcset="../img/iphone-hand-mobile@2x.png 2x" alt="Фото приложения">
+          </picture>
         </div>
         <div class="download-application__details">
           <h2 class="download-application__title">Взгляните на жизнь иначе!</h2>
@@ -89,7 +93,9 @@
         <div class="advantages__wrapper">
           <ul class="advantages__advantages-list advantage-list">
             <li class="advantage-list__item">
-              <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+              <picture>
+                <img class="advantage-list__item-image" src="../img/iphone-screen-1-desktop@1x.png 1x" srcset="../img/iphone-screen-1-desktop@2x.png 2x" alt="Телефон">
+              </picture>
               <h3 class="advantage-list__title">
                 Поднимает настроение
               </h3>
@@ -98,7 +104,9 @@
               </p>
             </li>
             <li class="advantage-list__item">
-              <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+              <picture>
+                <img class="advantage-list__item-image" src="../img/iphone-screen-2-desktop@1x.png 1x" srcset="../img/iphone-screen-2-desktop@2x.png 2x" alt="Телефон">
+              </picture>
               <h3 class="advantage-list__title">
                 Меняет мир вокруг
               </h3>
@@ -107,7 +115,9 @@
               </p>
             </li>
             <li class="advantage-list__item">
-              <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+              <picture>
+                <img class="advantage-list__item-image" src="../img/iphone-screen-3-desktop@1x.png 1x" srcset="../img/iphone-screen-3-desktop@2x.png 2x" alt="Телефон">
+              </picture>
               <h3 class="advantage-list__title">
                 Заводит новых друзей
               </h3>
@@ -117,7 +127,10 @@
             </li>
           </ul>
           <div class="advantage-list__image-division">
-              <img class="advantage-list__image" src="http://placehold.it/157x320" alt="Всем привет!">
+            <picture>
+              <source media="(min-width: 660px)" srcset="../img/iphone-screen-3-tablet@1x.png 1x, ../img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="advantage-list__image" src="../img/iphone-screen-mobile@1x.png" srcset="../img/iphone-screen-mobile@2x.png 2x">
+            </picture>
           </div>
         </div>
       </section>
@@ -267,7 +280,6 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="http://placehold.it/150x150" alt="Карта">
       </section>
       <div class="page-footer-wrapper">
         <footer class="page-footer">
