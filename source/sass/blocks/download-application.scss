@@ -89,11 +89,14 @@
     padding: 0;
     width: $layout-width-tablet;
     background-color: rgba(255, 255, 255, 0);
+    z-index: 2;
   }
 
   .download-application__index-phone-image {
     width: $layout-width-tablet;
     position: absolute;
+    bottom: 0;
+    z-index: 1;
   }
 
   .download-application__download-paragraph {
@@ -110,12 +113,12 @@
   }
 
   .download-application__details {
-    width: 430px;
+    width: $layout-width-desktop;
     flex-grow: 0;
   }
 
   .download-application__index-phone-image {
-    width: 770px;
+    width: $layout-width-desktop;
   }
 
   .download-application__title {
@@ -134,25 +137,5 @@
     margin-left: 132px;
     margin-top: 60px;
     margin-bottom: 124px;
-  }
-}
-
-@media (min-width: $layout-width-desktop) {
-  .download-application {
-    width: $layout-width-desktop;
-  }
-
-  .download-application__details {
-    width: 430px;
-    flex-grow: 0;
-  }
-
-  .download-application__index-phone-image {
-    width: 770px;
-  }
-
-  .download-application__title {
-    margin: 0 auto;
-    margin-top: 121px;
   }
 }
