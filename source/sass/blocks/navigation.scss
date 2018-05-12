@@ -13,7 +13,6 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  min-width: 145px;
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -32,13 +31,25 @@
   }
 
   .navigation__link {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    display: block;
     font-size: 18px;
     font-weight: $font-regular;
     line-height: 18px;
     text-transform: none;
     flex-grow: 0;
+    text-align: left;
+  }
+
+  .navigation__link--main {
+    width: 70px;
+  }
+
+  .navigation__link--photo {
+    width: 107px;
+  }
+
+  .navigation__link--form {
+    width: 70px;
   }
 
   .navigation__link--logo {

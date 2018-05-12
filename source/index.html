@@ -12,7 +12,11 @@
         <li class="page-header__list-item">
           <a class="page-header__logo-link" href="#">
             <span class="page-header__logo">
-              <img src="img/logo-pink-white-mobile.svg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-img" src="../img/logo-pink-white-mobile.svg" alt="Лого Пинк">
+              </picture>
             </span>
           </a>
         </li>
@@ -25,21 +29,27 @@
       <nav class="navigation">
         <ul class="navigation__list site-list site-list--logo">
           <li class="site-list__item site-list__item--logo">
-            <a class="navigation__link navigation__link--logo" href="#"><img src="http://placehold.it/150x40" alt="Логотип"></a>
+            <a class="navigation__link navigation__link--logo" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-img" src="../img/logo-pink-white-mobile.svg" alt="Лого Пинк">
+              </picture>
+            </a>
           </li>
         </ul>
         <ul class="navigation__list site-list">
           <li class="site-list__item">
-            <a class="navigation__link">Главная</a>
+            <a class="navigation__link navigation__link--main">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="navigation__link" href="photo.html">Фотографии</a>
+            <a class="navigation__link navigation__link--photo" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="navigation__link" href="form.html">Конкурс</a>
+            <a class="navigation__link navigation__link--form" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="navigation__link" href="https://htmlacademy.ru">HTML academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -59,17 +69,17 @@
           <ul class="download-application__os-list download-list">
             <li class="download-list__item">
               <a class="download-list__link" href="#">
-                <img src="http://placehold.it/50x50" alt="ios">
+                <img src="../img/logo-apple.svg" width="47" height="56" alt="ios">
               </a>
             </li>
             <li class="download-list__item">
               <a class="download-list__link" href="#">
-                <img src="http://placehold.it/50x50" alt="Android">
+                <img src="../img/logo-android.svg" width="43" height="47" alt="Android">
               </a>
             </li>
             <li class="download-list__item">
               <a class="download-list__link" href="#">
-                <img src="http://placehold.it/50x50" alt="Windows Phone">
+                <img src="../img/logo-microsoft.svg" width="44" height="41" alt="Windows Phone">
               </a>
             </li>
           </ul>

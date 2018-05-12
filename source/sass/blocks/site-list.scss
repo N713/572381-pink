@@ -8,7 +8,6 @@
 .site-list__item {
   box-shadow: 0 1px 0 #000000,
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  min-height: 63px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -20,7 +19,6 @@
 
 @media (min-width: $layout-width-tablet) {
   .site-list__item {
-    min-height: 63px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -45,7 +43,11 @@
   }
 
   .site-list--logo {
+    margin-top: 27px;
+    margin-bottom: 43px;
     padding-left: 130px;
+    padding-right: 0;
+    width: 147px;
   }
 
   .site-list__item {
@@ -54,5 +56,9 @@
 
   .site-list__item--logo {
     display: block;
+  }
+
+  .navigation__link--academy {
+    width: 135px;
   }
 }
