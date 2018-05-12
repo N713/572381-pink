@@ -44,6 +44,14 @@
   display: none;
 }
 
+.page-header__burger-button,
+.page-header__cross-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 @media (min-width: $layout-width-tablet) {
   .page-header {
     width: $layout-width-tablet;

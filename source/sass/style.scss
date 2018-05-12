@@ -49,6 +49,16 @@ body {
   fill: #ffffff;
 }
 
+.navigation__link--logo path {
+  fill: #ffffff;
+}
+
+.navigation__link--logo:hover {
+  .logo-letters path {
+    fill: #d22856;
+  }
+}
+
 .page-header__logo-link:hover {
   .logo-letters path {
     fill: #d22856;
@@ -63,6 +73,10 @@ body {
   fill: #ffffff;
 }
 
+.logo-letters {
+  display: block;
+}
+
 .glass-star,
 .glass-tablet,
 .glass-desktop,
@@ -72,6 +86,31 @@ body {
 
 .logo-letters-margin {
   margin-left: -51px;
+}
+
+.page-header__burger-button path,
+.page-header__cross-button path {
+  fill: #ffffff;
+}
+
+.page-header__burger-button:hover {
+  .burger-button path {
+    fill: #d22856;
+  }
+}
+
+.page-header__cross-button:hover {
+  .cross-button path {
+    fill: #d22856;
+  }
+}
+
+.page-header__burger-button {
+  display: none;
+}
+
+.page-header__cross-button {
+  display: block;
 }
 
 @media (min-width: $layout-width-mobile) {
@@ -89,12 +128,6 @@ body {
     margin-left: 0;
   }
 
-  .page-header__logo-link,
-  .page-header__list-item {
-    width: 147px;
-    height: 40px;
-  }
-
   .glass-star,
   .glass-desktop,
   .glass-desktop-stars {
@@ -102,6 +135,14 @@ body {
   }
 
   .glass-tablet {
+    display: block;
+  }
+
+  .page-header__cross-button {
+    display: none;
+  }
+
+  .page-header__burger-button {
     display: block;
   }
 }
