@@ -53,6 +53,12 @@ body {
   fill: #ffffff;
 }
 
+.page-footer__logo-link:hover {
+  .footer-letters path {
+    fill: #d22856;
+  }
+}
+
 .navigation__link--logo:hover {
   .logo-letters path {
     fill: #d22856;
@@ -69,8 +75,16 @@ body {
   fill: #d22856;
 }
 
+.glass-star-header {
+  fill: #283645;
+}
+
 .glass-desktop path {
   fill: #ffffff;
+}
+
+.glass-desktop-footer path {
+  fill: #d22856;
 }
 
 .logo-letters {
@@ -78,8 +92,10 @@ body {
 }
 
 .glass-star,
+.glass-star-header,
 .glass-tablet,
 .glass-desktop,
+.glass-desktop-footer,
 .glass-desktop-stars {
   display: none;
 }
@@ -130,7 +146,9 @@ body {
   }
 
   .glass-star,
+  .glass-star-header,
   .glass-desktop,
+  .glass-desktop-footer,
   .glass-desktop-stars {
     display: none;
   }
@@ -153,13 +171,16 @@ body {
     width: 100%;
   }
 
-  .glass-tablet {
+  .glass-tablet,
+  .glass-tablet-footer {
     display: none;
   }
 
   .glass-star,
+  .glass-star-header,
   .glass-desktop,
-  .glass-desktop-stars {
+  .glass-desktop-stars,
+  .glass-desktop-footer {
     display: block;
   }
 }
