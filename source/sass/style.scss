@@ -129,6 +129,12 @@ body {
   display: block;
 }
 
+.page-footer__developer-logo:hover {
+  .academy-logo path {
+    fill: #d22856;
+  }
+}
+
 @media (min-width: $layout-width-mobile) {
   body {
     width: $layout-width-mobile;

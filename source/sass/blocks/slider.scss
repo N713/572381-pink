@@ -1,13 +1,10 @@
-.slider__toggles button {
-  margin: 9px;
-  padding: 0;
-  width: 7px;
+.slider__toggle {
+  width: 6px;
   height: 7px;
-  background-color: #283645;
   opacity: 0.3;
-}
 
-.slider__toggle--active {
-  width: 70px;
-  height: 70px;
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 }
