@@ -28,10 +28,6 @@
   flex-direction: column;
 }
 
-.form__input-check {
-  margin: 0;
-}
-
 .form__label {
   margin-left: 33px;
   margin-top: 28px;
@@ -130,16 +126,15 @@
 }
 
 .form__input-radio + .form__label--radio::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: -3px;
+  top: -10px;
   left: 0;
   width: 37px;
   height: 36px;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
   border-radius: 50%;
-  background: #FFF;
 }
 
 .form__input-radio:checked + .form__label--radio::before {
