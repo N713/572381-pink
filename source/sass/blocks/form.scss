@@ -1,5 +1,4 @@
 .form {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,6 +60,8 @@
   height: 59px;
   margin-top: 16px;
   padding-left: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
   outline: none;
 
   &:hover {
@@ -621,10 +622,12 @@
   .form__mail {
     padding: 0;
     width: 371px;
+    position: relative;
   }
 
   .form__number input,
   .form__mail input {
+    box-sizing: border-box;
     width: 371px;
     margin: 0;
     margin-top: 44px;
@@ -635,6 +638,32 @@
     width: 300px;
     margin-top: 21px;
     margin-bottom: 20px;
+  }
+
+  .form__number::before {
+    content: "";
+    position: absolute;
+    top: 46px;
+    right: 2px;
+    width: 55px;
+    height: 55px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .form__mail::before {
+    content: "";
+    position: absolute;
+    top: 46px;
+    right: 2px;
+    width: 55px;
+    height: 55px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .form__user-emotions-area {
