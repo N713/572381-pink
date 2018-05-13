@@ -6,6 +6,31 @@
   display: none;
 }
 
+.arrow-button {
+  padding: 0;
+  margin: 105px;
+  width: 30px;
+  height: 70px;
+  background-color: #ffffff;
+  border: none;
+  align-self: center;
+  display: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .arrow {
+    fill: #283645;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+
 @media (min-width: $layout-width-mobile) {
   .reviews {
     border: 1px solid orange;
@@ -33,6 +58,10 @@
     align-content: center;
     list-style: none;
   }
+
+  .arrow-button {
+    display: none;
+  }
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -51,6 +80,7 @@
 @media (min-width: $layout-width-desktop) {
   .reviews {
     width: $layout-width-desktop;
+    flex-direction: row;
   }
 
   .quotes,
@@ -65,5 +95,9 @@
   .reviews__toggles {
     margin-top: 30px;
     display: none;
+  }
+
+  .arrow-button {
+    display: block;
   }
 }

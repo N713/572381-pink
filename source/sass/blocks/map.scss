@@ -4,10 +4,19 @@
   background-color: $font-color-white;
   text-align: center;
   background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center -450px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
   }
+}
+
+.map__triangle::before {
+  content: url("../img/icon-map-marker.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .map__triangle {
@@ -17,6 +26,7 @@
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0);
   background-size: 100% auto;
+  position: relative;
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -24,6 +34,7 @@
     width: $layout-width-tablet;
     height: 376px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: center -360px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
@@ -41,6 +52,7 @@
     width: $layout-width-desktop;
     height: 505px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: center -300px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
