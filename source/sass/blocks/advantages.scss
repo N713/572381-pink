@@ -47,6 +47,9 @@
   .advantages__wrapper {
     display: flex;
     flex-direction: row-reverse;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
   }
 }
 

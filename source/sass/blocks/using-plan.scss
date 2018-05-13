@@ -12,6 +12,13 @@
   align-items: center;
 }
 
+.using-plan__wrapper {
+  padding-top: 127px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: $layout-width-tablet) {
   .using-plan {
     width: $layout-width-tablet;

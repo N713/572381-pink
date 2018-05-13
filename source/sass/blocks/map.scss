@@ -10,6 +10,15 @@
   }
 }
 
+.map__triangle {
+  width: $layout-width-mobile;
+  height: 200px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 100% auto;
+}
+
 @media (min-width: $layout-width-tablet) {
   .map {
     width: $layout-width-tablet;
@@ -19,6 +28,11 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
     }
+  }
+
+  .map__triangle {
+    width: $layout-width-tablet;
+    height: 376px;
   }
 }
 
@@ -31,5 +45,10 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
     }
+  }
+
+  .map__triangle {
+    width: $layout-width-desktop;
+    height: 505px;
   }
 }

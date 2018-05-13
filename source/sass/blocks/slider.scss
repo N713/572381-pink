@@ -1,10 +1,21 @@
 .slider__toggle {
-  width: 6px;
-  height: 7px;
+  margin: 9px;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+  background-color: #283645;
   opacity: 0.3;
 
   &:hover {
     opacity: 0.6;
     cursor: pointer;
   }
+}
+
+.slider__toggle--active {
+  border: 3px solid #283645;
+  background-color: #ffffff;
+  opacity: 1;
 }

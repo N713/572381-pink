@@ -1,3 +1,11 @@
+.quotes {
+  display: none;
+}
+
+.quotes-paragraph {
+  display: none;
+}
+
 @media (min-width: $layout-width-mobile) {
   .reviews {
     border: 1px solid orange;
@@ -23,25 +31,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-  }
-
-  .slider__toggle {
-    margin: 9px;
-    padding: 0;
-    width: 9px;
-    height: 9px;
-    border-radius: 100%;
-    border: none;
-    background-color: #bec3c7;
-
-    &:hover {
-      opacity: 0.6;
-      cursor: pointer;
-    }
-  }
-
-  .slider__toggle--active {
-    border: 3px solid #283645;
+    list-style: none;
   }
 }
 
@@ -61,5 +51,19 @@
 @media (min-width: $layout-width-desktop) {
   .reviews {
     width: $layout-width-desktop;
+  }
+
+  .quotes,
+  .quotes-paragraph {
+    display: block
+  }
+
+  .quotes-paragraph {
+    margin: 0 auto;
+  }
+
+  .reviews__toggles {
+    margin-top: 30px;
+    display: none;
   }
 }
