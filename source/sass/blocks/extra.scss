@@ -10,6 +10,40 @@
     background-color: $font-color-white;
   }
 
+  .extra__timer {
+    width: 238px;
+    height: 276px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/timer-tablet.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .extra__circle {
+    margin-top: 35px;
+    width: 202px;
+    height: 202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/diagram-fill-tablet.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .extra-span {
+    text-align: center;
+    vertical-align: middle;
+    width: 106px;
+    color: #d22856;
+    font-family: $font-family;
+    font-size: 96px;
+    font-weight: $font-bold;
+    line-height: 96px;
+  }
+
   .extra__image {
     display: block;
     width: 330px;
@@ -25,6 +59,7 @@
   .extra__allday {
     font-size: 30px;
     line-height: 36px;
+    margin-top: 102px;
   }
 
   .extra__british-scientists {
@@ -55,8 +90,43 @@
     background-color: #f2f2f2;
   }
 
+  .extra__timer {
+    width: 298px;
+    height: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/icon-timer.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .extra__circle {
+    margin-top: 49px;
+    width: 255px;
+    height: 253px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/icon-editor-diagram-fill.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .extra-span {
+    text-align: center;
+    vertical-align: middle;
+    width: 131px;
+    color: #d22856;
+    font-family: $font-family;
+    font-size: 120px;
+    font-weight: $font-bold;
+    line-height: 120px;
+  }
+
   .extra__allday {
     font-size: 30px;
+    margin-top: 114px;
   }
 
   .extra__allday br {
